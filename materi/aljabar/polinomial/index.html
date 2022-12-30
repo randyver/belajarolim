@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>belajarOlim</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    </head>
+<body>
+    <nav class="nav">
+        <div>
+            <h3>BelajarOlim</h3>
+        </div>
+        <ul>
+            <li class="materi"><a href="">Materi</a></li>
+            <li class="kumpulan-soal"><a href="">Kumpulan Soal</a></li>
+            <li class="try-out"><a href="">Try Out</a></li>
+            <li class="kontes"><a href="">Kontes</a></li>
+        </ul>
+    </nav>
+    <div class="materi-aljabar">
+        <h1 id="polinomial">Polinomial</h1>
+        <p>Polinomial berderajat <span class="math inline">\(n\)</span> secara
+        umum dapat dinyatakan dalam bentuk <span
+        class="math display">\[P(x)=a_nx^n+a_{n-1}x^{n-1}+\dots
+        +a_1x+a_0\]</span> Polinomial <span class="math inline">\(P(x)\)</span>
+        dengan derajat <span class="math inline">\(n\)</span> memiliki sbebanyak
+        <span class="math inline">\(n\)</span> buah akar di bilangan kompleks
+        (akar-akar yang sama dihitung sebanyak akar yang sama). Setiap
+        polinomial memiliki paling sedikit satu buah akar, sehingga kita
+        dapatkan <span class="math inline">\(P(x)\)</span> sebagai <span
+        class="math display">\[P(x)=(x-x_1)P_1(x)\]</span> Dengan <span
+        class="math inline">\(P_1(x)\)</span> merupakan polinomial dengan
+        derajat <span class="math inline">\(n-1\)</span>. Proses ini dapat terus
+        dilanjutkan hingga kita memperoleh bentuk <span
+        class="math display">\[P(x)=a_n(x-x_1)(x-x_2)\dots (x-x_n)\]</span></p>
+        <h1 id="teorema-sisa-dan-teorema-faktor">Teorema Sisa dan Teorema
+        Faktor</h1>
+        <p>Polinomial <span class="math inline">\(P(x)\)</span> jika dibagi
+        <span class="math inline">\((x-a)\)</span>, maka sisa pembagiannya
+        adalag <span class="math inline">\(P(a)\)</span>. Teorema faktor dapat
+        diturunkan dari teorema sisa ini. Jika <span
+        class="math inline">\(r\)</span> adalah akar dari polinomial <span
+        class="math inline">\(P(x)\)</span>, maka sisa pembagian <span
+        class="math inline">\(P(x)\)</span> oleh <span
+        class="math inline">\((x-r)\)</span> adalah <span
+        class="math inline">\(0\)</span>. Algoritma pembagiannya, yaitu <span
+        class="math display">\[P(x)=Q(x)(x-a)+r\]</span> dengan <span
+        class="math inline">\(Q(x)\)</span> merupakan polinomial hasil bagi dan
+        <span class="math inline">\(r\)</span> adalah sisa pembagian.</p>
+        <h1 id="teorema-vieta">Teorema Vieta</h1>
+        <p>Jika <span class="math inline">\(P(x)\)</span> merupakan polinomial
+        dengan <span class="math display">\[P(x)=a_nx^n+a_{n-1}x^{n-1}+\dots
+        +a_2x^2+a_1x+a_0\]</span> di mana <span
+        class="math inline">\(a_0\)</span> adalah konstanta, lalu jika <span
+        class="math inline">\(x_1, x_2, \dots , x_n\)</span> merupakan akar-akar
+        dari <span class="math inline">\(P(x)\)</span> maka <span
+        class="math display">\[\begin{aligned}
+            x_1+x_2+\dots +x_{n-1}+x_n
+        &amp;=-\left(\frac{a_{n-1}}{a_{n}}\right)\\
+            x_1x_2+x_2x_3+\dots +x_{n-1}x_n &amp;=
+        \left(\frac{a_{n-2}}{a_n}\right)\\
+            x_1x_2x_3+x_2x_3x_4+\dots +x_{n-2}x_{n-1}x_n &amp;=
+        -\left(\frac{a_{n-3}}{a_n}\right)\\
+            \dots \\
+            x_1x_2x_3\dots x_{n-1}x_n &amp;= (-1)^n\left(\frac{a_0}{a_n}\right)
+        \end{aligned}\]</span> Misalkan <span
+        class="math inline">\(P(x)=ax^2+bx+c\)</span> dengan akar-akarnya <span
+        class="math inline">\(x_1\)</span> dan <span
+        class="math inline">\(x_2\)</span>, maka <span
+        class="math display">\[x_1+x_2=-\frac{b}{a} \text{ dan }
+        x_1x_2=\frac{c}{a}\]</span></p>
+    </div>
+    <div class="latihan">
+        <h1>Latihan Soal</h1>
+        <form id="practice-form">
+            <ul>
+                <li>
+                    <label><p>Tentukan semua polinomial <span
+                        class="math inline">\(P(x)\)</span> dengan koefisien real sehingga <span
+                        class="math display">\[(x+10)P(2x)=(8x-32)P(x+6)\]</span> untuk semua
+                        bilangan real <span class="math inline">\(x\)</span> dengan <span
+                        class="math inline">\(P(1)=210\)</span>.</p></label><br>
+                    <input type="text" name="question1">
+                    <label id="tanda0"></label>
+                    <label id="kj0"></label>
+                </li>
+                <li>
+                    <label><p>Misalkan <span
+                        class="math inline">\(P(x)=x^4+ax^3+bx^2+cx+d\)</span> dengan <span
+                        class="math inline">\(a,b,c,d\)</span> bilangan real. Misalkan <span
+                        class="math inline">\(P(1)=827\)</span>, <span
+                        class="math inline">\(P(2)=1654\)</span>, dan <span
+                        class="math inline">\(P(3)=2481\)</span>. Tentukan nilai dari <span
+                        class="math inline">\(\frac{P(9)+P(-5)}{4}\)</span>.</p></label><br>
+                    <input type="text" name="question2">
+                    <label id="tanda1"></label>
+                    <label id="kj1"></label>
+                </li>
+                <li>
+                    <label><p>Apabila <span class="math inline">\(P(x)=x^3+ax^2+bx+c\)</span>
+                        dengan <span class="math inline">\(a,b,c\)</span> adalah bilangan bulat
+                        memiliki akar-akar <span class="math inline">\(a,b,c\)</span> juga, maka
+                        tentukan banyaknya polinomial <span class="math inline">\(P(x)\)</span>
+                        yang memenuhi.</p></label><br>
+                    <input type="text" name="question3">
+                    <label id="tanda2"></label>
+                    <label id="kj2"></label>
+                </li>
+                <li>
+                    <label><p>Misalkan <span class="math inline">\(P(x)=1+x+x^2+x^3\)</span>
+                        memiliki akar-akar <span class="math inline">\(a,b,c\)</span>. Hitunglah
+                        nilai dari <span
+                        class="math inline">\(a^{2007}+b^{2003}+c^{1999}\)</span>.</p></label><br>
+                    <input type="text" name="question4">
+                    <label id="tanda3"></label>
+                    <label id="kj3"></label>
+                </li>
+                <li>
+                    <label><p>Diketahui <span
+                        class="math inline">\(p(x)=a_0+a_1x+a_2x^2+\dots+a_{2021}x^{2021}+x^{2022}\)</span>
+                        yang memiliki akar-akar berupa bilangan bulat berurutan. Diketahui
+                        bahhwa <span
+                        class="math inline">\(a_0+a_1+a_2+\dots+a_{2021}=-1\)</span>, maka
+                        tentukan semua nilai yang mungkin dari <span
+                        class="math inline">\(a_0\)</span>.</p></label><br>
+                    <input type="text" name="question4">
+                    <label id="tanda4"></label>
+                    <label id="kj4"></label>
+                </li>
+            </ul>
+            <div class="tombol-submit-nilai">
+                <button id="submit" type="button" class="tombol-submit" onclick="cekJawaban()"><h3>Submit</h3></button>
+                <h3 id="nilai"></h3>
+            </div>
+            <div class="tombol-reset-kj" id="reset-kj">
+                <button id="lihat-kj" type="button" onclick="lihatKj()"><h3>Perlihatkan Kunci Jawaban</h3></button>
+                <button id="reset"><h3>Reset</h3></button>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="">Kebijakan Privasi</a></li>
+            <li><a href="">Syarat dan Ketentuan</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Tentang Kami</a></li>
+            <li><a href="">Kontak</a></li>
+        </ul>
+        <p>© 2022 All Rights Reserved | belajarOlim</p>
+    </div>
+</body>
+</html>

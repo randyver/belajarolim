@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Style Navigation Bar*/
+.nav{
+    background-color: rgb(235, 62, 62);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: white;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    padding: 24px;
+    color: white;
+}
+.nav ul li a:hover{
+    background-color: #ff914d;
+    color: black;
+}
+
+/*style materi*/
+.materi-aljabar h1{
+    text-align: center;
+    color: #ff914d;
+    margin-top: 30px;
+}
+.materi-aljabar{
+    margin-left: 80px;
+}
+.materi-aljabar li{
+    margin-left: 40px;
+    line-height: 2;
+}
+
+/*style latihan*/
+.latihan h1{
+    text-align: center;
+    color: #ff914d;
+    margin-top: 30px;
+}
+.latihan ul{
+    margin: 80px 80px;
+    list-style: decimal;
+}
+
+/* tombol submit dan nilai ditampilkan */
+.tombol-submit-nilai{
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+.tombol-submit{
+    position: absolute;
+    height: 30px;
+    width: 80px;
+}
+#nilai{
+    margin-top: 40px;
+    color: white;
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* tombol reset dan tombol lihat kj */
+#reset-kj{
+    margin-bottom: 60px;
+    display: none;
+    margin-left: 500px;
+}
+#lihat-kj, #reset{
+    width: 250px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+/* style semua tombol */
+#submit ,.tombol-reset-kj button{
+    color: black;
+    background-color: #ff914d;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+}
+#submit:hover, .tombol-reset-kj button:hover{
+    color: white;
+    background-color: rgb(235, 62, 62);
+}
+
+/*style footer*/
+.footer{
+    margin-top: 40px;
+    background-color: rgb(56, 55, 55);
+    height: 60px;
+}
+.footer ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 30px;
+    padding: 5px;
+    margin-left: 320px;
+}
+.footer ul li{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.footer p{
+    text-align: center;
+    color: white;
+    height: 10px;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: white;
+}

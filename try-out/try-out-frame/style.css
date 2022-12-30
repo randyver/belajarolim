@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Style Navigation Bar*/
+.nav{
+    background-color: rgb(235, 62, 62);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: white;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    padding: 24px;
+    color: white;
+}
+.nav ul li a:hover{
+    background-color: #ff914d;
+    color: black;
+}
+
+/* style menu try out */
+h1{
+    text-align: center;
+    color: rgb(235, 62, 62);
+    margin-top: 30px;
+}
+.menu-try-out{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    height: 500px;
+}
+.menu-try-out button{
+    height: 200px;
+    width: 200px;
+    background-color: #ff914d;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+}
+.menu-try-out button:hover{
+    background-color: rgb(235, 62, 62);
+    color: white;
+}
+.menu-try-out h2{
+    margin-bottom: 20px;
+}
+
+/*style footer*/
+.footer{
+    margin-top: 40px;
+    background-color: rgb(56, 55, 55);
+    height: 60px;
+}
+.footer ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 30px;
+    padding: 5px;
+    margin-left: 320px;
+}
+.footer ul li{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.footer p{
+    text-align: center;
+    color: white;
+    height: 10px;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: white;
+}

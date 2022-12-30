@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav{
+    background-color: rgb(235, 62, 62);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: white;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    padding: 24px;
+    color: white;
+}
+.nav ul li a:hover{
+    background-color: #ff914d;
+    color: black;
+}
+.intro{
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    height: 320px;
+}
+.intro p{
+    text-align: justify;
+    padding: 120px;
+}
+.opsi{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    height: 300px;
+}
+.opsi p{
+    text-align: justify;
+    padding: 20px;
+    font-size: medium;
+}
+.opsi button{
+    width: 300px;
+    height: 250px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 0;
+    background-color: #ff914d;
+}
+.opsi button:hover{
+    background-color: rgb(235, 62, 62);
+    color: white;
+}
+.footer{
+    margin-top: 40px;
+    background-color: rgb(56, 55, 55);
+    height: 60px;
+}
+.footer ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 30px;
+    padding: 5px;
+    margin-left: 320px;
+}
+.footer ul li{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.footer p{
+    text-align: center;
+    color: white;
+    height: 10px;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: white;
+}
