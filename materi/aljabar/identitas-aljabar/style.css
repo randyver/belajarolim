@@ -34,7 +34,7 @@
     margin-top: 30px;
 }
 .materi-aljabar{
-    margin-left: 80px;
+    margin: 80px 80px;
 }
 .materi-aljabar li{
     margin-left: 40px;
@@ -51,8 +51,6 @@
     margin: 80px 80px;
     list-style: decimal;
 }
-
-/* tombol submit dan nilai ditampilkan */
 .tombol-submit-nilai{
     margin-bottom: 60px;
     display: flex;
@@ -63,27 +61,16 @@
     height: 30px;
     width: 80px;
 }
-#nilai{
-    margin-top: 40px;
-    color: white;
-    border: 0;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-/* tombol reset dan tombol lihat kj */
 #reset-kj{
     margin-bottom: 60px;
     display: none;
     margin-left: 500px;
 }
 #lihat-kj, #reset{
-    width: 250px;
-    height: 40px;
+    height: 30px;
+    width: 180px;
     margin-right: 20px;
 }
-
-/* style semua tombol */
 #submit ,.tombol-reset-kj button{
     color: black;
     background-color: #ff914d;
@@ -94,9 +81,20 @@
     border: 0;
     border-radius: 10px;
 }
+#lihat-kj, #reset{
+    width: 250px;
+    height: 40px;
+}
 #submit:hover, .tombol-reset-kj button:hover{
     color: white;
     background-color: rgb(235, 62, 62);
+}
+#nilai{
+    margin-top: 40px;
+    color: white;
+    border: 0;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 /*style footer*/
