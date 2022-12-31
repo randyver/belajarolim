@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajarOlim</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+<body>
+    <nav class="nav">
+        <div>
+            <h3>BelajarOlim</h3>
+        </div>
+        <ul>
+            <li class="materi"><a href="">Materi</a></li>
+            <li class="kumpulan-soal"><a href="">Kumpulan Soal</a></li>
+            <li class="try-out"><a href="">Try Out</a></li>
+            <li class="kontes"><a href="">Kontes</a></li>
+        </ul>
+    </nav>
+    <div class="materi-aljabar">
+        <h1></h1>
+    </div>
+    <div class="latihan">
+        <h1>Latihan Soal</h1>
+        <form id="practice-form">
+            <ul>
+                <li>
+                    <label><p>Diberikan bilangan real <span class="math inline">\(x,y\)</span>
+                        yang memenuhi <span class="math display">\[x+y=2\text{ dan }
+                        x^4+y^4=1234.\]</span> Tentukan nilai mutlak dari <span
+                        class="math inline">\(xy\)</span>.</p></label><br>
+                    <input type="text">
+                    <label id="tanda0"></label>
+                    <label id="kj0"></label>
+                </li>
+            </ul>
+            <div class="tombol-submit-nilai">
+                <button id="submit" type="button" class="tombol-submit" onclick="cekJawaban()"><h3>Submit</h3></button>
+                <h3 id="nilai"></h3>
+            </div>
+            <div class="tombol-reset-kj" id="reset-kj">
+                <button id="lihat-kj" type="button" onclick="lihatKj()"><h3>Perlihatkan Kunci Jawaban</h3></button>
+                <button id="reset"><h3>Reset</h3></button>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="">Kebijakan Privasi</a></li>
+            <li><a href="">Syarat dan Ketentuan</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Tentang Kami</a></li>
+            <li><a href="">Kontak</a></li>
+        </ul>
+        <p>© 2022 All Rights Reserved | belajarOlim</p>
+    </div>
+    <script src="script.js"></script>
+<body>
+</html>
