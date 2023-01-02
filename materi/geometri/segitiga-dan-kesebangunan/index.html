@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajarOlim</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+<body>
+    <nav class="nav">
+        <div>
+            <h3>BelajarOlim</h3>
+        </div>
+        <ul>
+            <li class="materi"><a href="">Materi</a></li>
+            <li class="kumpulan-soal"><a href="">Kumpulan Soal</a></li>
+            <li class="try-out"><a href="">Try Out</a></li>
+            <li class="kontes"><a href="">Kontes</a></li>
+        </ul>
+    </nav>
+    <div class="materi-olim">
+        <h1 id="segitiga">Segitiga</h1>
+        <div class="center">
+        <p><img src="images/segitiga.PNG" alt="image" /></p>
+        </div>
+        <h2 id="segitiga-1">Segitiga</h2>
+        <p>Segitiga adalah bangun datar dalam geometri yang memiliki tiga sisi
+        dan tiga sudut yang berjumlah <span
+        class="math inline">\(180^\circ\)</span>.</p>
+        <h2 id="aturan-sinus">Aturan Sinus</h2>
+        <p>Perhatikan gambar (1), Maka berlaku <span
+        class="math display">\[\frac{a}{\sin \alpha}=\frac{b}{\sin
+        \beta}=\frac{c}{\sin \gamma}=2R\]</span> dengan <span
+        class="math inline">\(R\)</span> adalah panjang jari-jari lingkaran luar
+        segitiga.</p>
+        <h2 id="aturan-cosinus">Aturan Cosinus</h2>
+        <p>Perhatikan lagi gambar (1), maka berlaku <span
+        class="math display">\[\begin{aligned}
+            a^2 &amp;= b^2+c^2 -2bc\cos \alpha \\
+            b^2 &amp;= a^2+c^2 -2ac\cos \beta\\
+            c^2 &amp;= a^2+b^2 -2ab\cos \gamma
+        \end{aligned}\]</span></p>
+        <h2 id="luas-segitiga-heron">Luas Segitiga Heron</h2>
+        <p>Misalkan <span class="math inline">\(a,b,c\)</span> adalah panjang
+        ketiga sisi segitiga <span class="math inline">\(ABC\)</span>, maka
+        <span class="math inline">\(s=\frac{a+b+c}{2}\)</span> atau <span
+        class="math inline">\(s\)</span> adalah setengah keliling segitiga, maka
+        <span class="math display">\[[ABC]=\sqrt{s(s-a)(s-b)(s-c)}.\]</span></p>
+        <h2 id="luas-segitiga-dengan-sinus">Luas segitiga dengan Sinus</h2>
+        <p><span class="math display">\[[ABC]=\frac{1}{2}ab\sin \gamma
+        =\frac{1}{2}bc\sin \alpha=\frac{1}{2}ac\sin \beta\]</span></p>
+        <h2 id="teorema-garis-bagi">Teorema Garis Bagi</h2>
+        <div class="center">
+        <p><img src="images\teorema garis bagi.PNG" alt="image" /></p>
+        </div>
+        <p>Diberikan segitiga <span class="math inline">\(ABC\)</span>. Garis
+        bagi adalah garis yang membagi sudut sama besar. Ketiga garis bagi
+        segitiga <span class="math inline">\(ABC\)</span> berpotongan di satu
+        titik yaitu <strong>titik bagi</strong>. Titik bagi segitiga merupakan
+        titik pusat lingkaran dalam segitiga <span
+        class="math inline">\(ABC\)</span>. Misalkan <span
+        class="math inline">\(D\)</span> pada <span
+        class="math inline">\(AC\)</span> sehingga <span
+        class="math inline">\(BD\)</span> adalah garis bagi sudut <span
+        class="math inline">\(ABC\)</span>, maka berlaku <span
+        class="math display">\[\frac{AB}{BC}=\frac{AD}{DC}.\]</span></p>
+        <h2 id="teorema-garis-berat">Teorema Garis Berat</h2>
+        <div class="center">
+        <p><img src="images\garisberat.PNG" alt="image" /></p>
+        </div>
+        <p><span class="math inline">\(D,E,F\)</span> berturut-turut adalah
+        titik tengah dari <span class="math inline">\(AB,BC,CA\)</span>. <span
+        class="math inline">\(AE, BF, CD\)</span> berpotongan di satu titik.
+        Berlaku</p>
+        <ul>
+        <li><p><span class="math inline">\(DE\)</span> sejajar <span
+        class="math inline">\(AC\)</span>, <span
+        class="math inline">\(DF\)</span> sejajar <span
+        class="math inline">\(BC\)</span>, <span
+        class="math inline">\(EF\)</span> sejajar <span
+        class="math inline">\(AB\)</span></p></li>
+        <li><p><span
+        class="math inline">\(\dfrac{AG}{GE}=\dfrac{BG}{GF}=\dfrac{CG}{GD}=\dfrac{2}{1}\)</span></p></li>
+        </ul>
+        <h2 id="garis-tinggi">Garis Tinggi</h2>
+        <div class="center">
+        <p><img src="images\garistinggi.PNG" alt="image" /></p>
+        </div>
+        <p><span class="math inline">\(D, E, F\)</span> berturut-turut pada
+        <span class="math inline">\(AB, BC, CA\)</span> sehingga <span
+        class="math inline">\(AE\perp BC, BF\perp AC\)</span>, dan <span
+        class="math inline">\(CD\perp AB\)</span>. Titik <span
+        class="math inline">\(H\)</span> adalah <strong>titik tinggi</strong>
+        segitiga <span class="math inline">\(ABC\)</span>. Mengakibatkan ketiga
+        segiempat <span class="math inline">\(ABEF, BDFC, ADEC\)</span>
+        siklik.</p>
+        <h2 id="teorema-ceva">Teorema Ceva</h2>
+        <div class="center">
+        <p><img src="images\teoremaceva.PNG" alt="image" /></p>
+        </div>
+        <p>Misalkan <span class="math inline">\(D,E,F\)</span> pada sisi
+        segitiga, sehingga <span class="math inline">\(AE, BF, CD\)</span>
+        berpotongan di satu titik. Maka teorema ceva berlaku <span
+        class="math display">\[\dfrac{AF}{FC}\cdot \dfrac{CE}{EB}\cdot
+        \dfrac{BD}{DA}=1\]</span></p>
+        <h2 id="teorema-menelaus">Teorema Menelaus</h2>
+        <div class="center">
+        <p><img src="images\teoremamenelausok.PNG" alt="image" /></p>
+        </div>
+        <p>Pada segitiga <span class="math inline">\(ABC\)</span>. Titik <span
+        class="math inline">\(D\)</span> di luar segitiga sehingga <span
+        class="math inline">\(B,C,D\)</span> segaris. Titik <span
+        class="math inline">\(E\)</span> dan <span
+        class="math inline">\(F\)</span> berada di <span
+        class="math inline">\(AB\)</span> dan <span
+        class="math inline">\(AC\)</span> berturut-turut sehingga <span
+        class="math inline">\(D,E,F\)</span> segaris. Teorema Menelaus berlaku
+        <span class="math display">\[\dfrac{BD}{CD}\cdot \dfrac{DF}{FA}\cdot
+        \dfrac{AE}{EB}=1\]</span></p>
+        <h2 id="teorema-stewart">Teorema Stewart</h2>
+        <div class="center">
+        <p><img src="images\teoremamenelaus.PNG" alt="image" /></p>
+        </div>
+        <p>Titik <span class="math inline">\(D\)</span> berada di <span
+        class="math inline">\(AC\)</span>, maka teorema stewart berlaku <span
+        class="math display">\[BD^2\cdot AC=AB^2\cdot DC+BC^2\cdot AD-AD\cdot
+        DC\cdot AC\]</span></p>
+        <h1 id="kesebangunan">Kesebangunan</h1>
+        <div class="center">
+        <p><img src="images\kesebangunan.PNG" alt="image" /></p>
+        </div>
+        <p>Segitiga <span class="math inline">\(ABC\)</span> sebangun dengan
+        segitiga <span class="math inline">\(A_1B_1C_1\)</span> jika dan hanya
+        jika <span class="math display">\[\alpha=\alpha_1, \beta=\beta_1,
+        \gamma=\gamma_1 \text{ dan }
+        \frac{a_1}{a}=\frac{b_1}{b}=\frac{c_1}{c}=k\]</span> untuk suatu
+        bilangan real positif <span class="math inline">\(k\)</span>. Kriteria
+        segitiga -segitiga yang sebangun</p>
+        <ul>
+        <li><p><strong>(Sudut-Sudut)</strong> Jika dua pasang sudut memiliki
+        besar yang sama</p></li>
+        <li><p><strong>(Sisi-Sisi-Sisi)</strong> Jika tiga pasang sisi
+        proporsional</p></li>
+        <li><p><strong>(Sisi-Sudut-Sisi)</strong> Jika dua pasang sisi
+        proporsional dan sudut yang mengapit mereka adalah sama</p></li>
+        </ul>
+        <h1 id="penjumlahan-trigonometri">Penjumlahan Trigonometri</h1>
+        <div class="center">
+        <p><img src="images\rumus-penjumlahan-trigonometri.png" alt="image" /></p>
+        </div>
+        <h1 id="perkalian-trigonometri">Perkalian Trigonometri</h1>
+        <div class="center">
+        <p><img src="images\rumus-perkalian-fungsi-sinus-dan-cosinus.png"
+        alt="image" /></p>
+        </div>
+    </div>
+    <div class="latihan">
+        <h1>Latihan Soal</h1>
+        <form id="practice-form">
+            <ul>
+                <li>
+                    <label><p>Diberikan segitiga sama sisi <span
+                        class="math inline">\(ABC\)</span> dengan titik <span
+                        class="math inline">\(P\)</span> pada <span
+                        class="math inline">\(BC\)</span>. Jika <span
+                        class="math inline">\(PB=50\)</span> dan <span
+                        class="math inline">\(PC=30\)</span>, tentukan panjang <span
+                        class="math inline">\(PA\)</span>.</p></label><br>
+                    <input type="text">
+                    <label id="tanda0"></label>
+                    <label id="kj0"></label>
+                </li>
+                <li>
+                    <label><p>Pada segitiga <span class="math inline">\(ABC\)</span> dengan
+                        <span class="math inline">\(\angle B=40^\circ\)</span> dan <span
+                        class="math inline">\(AB+BC=2AC\)</span>. Misalkan titik <span
+                        class="math inline">\(K\)</span> dan <span
+                        class="math inline">\(M\)</span> berturut-turut adalah titik tengah
+                        <span class="math inline">\(AB\)</span> dan <span
+                        class="math inline">\(BC\)</span>. Jika titik <span
+                        class="math inline">\(L\)</span> pada <span
+                        class="math inline">\(AC\)</span> sehingga <span
+                        class="math inline">\(BL\)</span> membagi sudut <span
+                        class="math inline">\(\angle ABC\)</span> sama besar. Tentukam besar
+                        <span class="math inline">\(\angle KLM\)</span> dalam derajat.</p></label><br>
+                    <input type="text">
+                    <label id="tanda1"></label>
+                    <label id="kj1"></label>
+                </li>
+                <li>
+                    <label><p>Pada segitiga <span class="math inline">\(ABC\)</span>, garis
+                        bagi <span class="math inline">\(\angle B\)</span> memotong <span
+                        class="math inline">\(AC\)</span> di <span
+                        class="math inline">\(P\)</span> dan garis bagi <span
+                        class="math inline">\(\angle C\)</span> memotong <span
+                        class="math inline">\(AB\)</span> di <span
+                        class="math inline">\(Q\)</span>. Apabila luas dari <span
+                        class="math inline">\(APB\)</span> adalah <span
+                        class="math inline">\(27\)</span> dan luas dari <span
+                        class="math inline">\(ACQ\)</span> adalah <span
+                        class="math inline">\(32\)</span>, apabila panjang <span
+                        class="math inline">\(BC\)</span> adalah <span
+                        class="math inline">\(x\)</span>, tentukan nilai dari <span
+                        class="math inline">\(x^2\)</span>.</p></label><br>
+                    <input type="text">
+                    <label id="tanda2"></label>
+                    <label id="kj2"></label>
+                </li>
+                <li>
+                    <label><p>Diberikan segitiga <span class="math inline">\(ABC\)</span>
+                        dengan <span class="math inline">\(AB+BC=2AC\)</span> dan <span
+                        class="math inline">\(\angle A-\angle C=90^\circ\)</span>. Nilai dari
+                        <span class="math inline">\(4\cos B\)</span> adalah …</p></label><br>
+                    <input type="text">
+                    <label id="tanda3"></label>
+                    <label id="kj3"></label>
+                </li>
+                <li>
+                    <label><p>Pada persegi <span class="math inline">\(ABCD\)</span> dengan
+                        panjang sisi <span class="math inline">\(1\)</span>. Misalkan titik
+                        <span class="math inline">\(X\)</span> dan <span
+                        class="math inline">\(Y\)</span> pada <span
+                        class="math inline">\(BC\)</span> dan <span
+                        class="math inline">\(CD\)</span> berturut-turut sehingga <span
+                        class="math inline">\(CX=CY=m\)</span>. Ketika diperpanjangkan, <span
+                        class="math inline">\(AB\)</span> memotong <span
+                        class="math inline">\(DX\)</span> di <span
+                        class="math inline">\(P\)</span>, <span
+                        class="math inline">\(AD\)</span> memotong <span
+                        class="math inline">\(BY\)</span> di <span
+                        class="math inline">\(Q\)</span>, <span
+                        class="math inline">\(AX\)</span> memotong <span
+                        class="math inline">\(DC\)</span> di <span
+                        class="math inline">\(R\)</span>, <span
+                        class="math inline">\(AY\)</span> memotong <span
+                        class="math inline">\(BC\)</span> di <span
+                        class="math inline">\(S\)</span>. Jika <span
+                        class="math inline">\(P,Q,R,S\)</span> segaris, apabila nilai <span
+                        class="math inline">\(m\)</span> dapat dinyatakan dalam bentuk <span
+                        class="math inline">\(\dfrac{a-\sqrt{b}}{c}\)</span> dengan <span
+                        class="math inline">\(a,b,c\)</span> adalah bilangan asli dan <span
+                        class="math inline">\(b\)</span> tidak habis dibagi oleh bilangan
+                        kuadrat manapun selain <span class="math inline">\(1\)</span>, tentukan
+                        nilai dari <span class="math inline">\(a+b+c\)</span>.</p></label><br>
+                    <input type="text">
+                    <label id="tanda4"></label>
+                    <label id="kj4"></label>
+                </li>
+                <li>
+                    <label><p>Diberikan segitiga sama kaki <span
+                        class="math inline">\(ABC\)</span> dengan <span
+                        class="math inline">\(AB=AC\)</span>. Misalkan titik <span
+                        class="math inline">\(P\)</span> berada di dalam segitiga <span
+                        class="math inline">\(ABC\)</span> sehingga <span
+                        class="math inline">\(\angle BCP=30^\circ\)</span>, <span
+                        class="math inline">\(\angle APB=150^\circ\)</span>, <span
+                        class="math inline">\(\angle CAP=39^\circ\)</span>. Besar <span
+                        class="math inline">\(\angle BAP\)</span> adalah …derajat.</p></label><br>
+                    <input type="text">
+                    <label id="tanda5"></label>
+                    <label id="kj5"></label>
+                </li>
+                <li>
+                    <label><p>Pada persegi panjang <span class="math inline">\(ABCD\)</span>.
+                        Misalkan titik <span class="math inline">\(P\)</span> dan <span
+                        class="math inline">\(Q\)</span> adalah titik tengah <span
+                        class="math inline">\(AB\)</span> dan <span
+                        class="math inline">\(BC\)</span> berturut-turut. <span
+                        class="math inline">\(AQ\)</span> dan <span
+                        class="math inline">\(CP\)</span> bertemu di <span
+                        class="math inline">\(R\)</span>. Jika <span
+                        class="math inline">\(AC=6\)</span> dan <span
+                        class="math inline">\(\angle ARC=150^\circ\)</span>. Apabila luas dari
+                        <span class="math inline">\(ABCD\)</span> dapat dinyatakan dalam <span
+                        class="math inline">\(a\sqrt{b}\)</span> dengan <span
+                        class="math inline">\(a,b\)</span> adalah bilangan asli dan <span
+                        class="math inline">\(b\)</span> tidak habis dibagi oleh bilangan
+                        kuadrat manapun selain satu, tentukan nilai dari <span
+                        class="math inline">\(10a+b\)</span>.</p></label><br>
+                    <input type="text">
+                    <label id="tanda6"></label>
+                    <label id="kj6"></label>
+                </li>
+            </ul>
+            <div class="tombol-submit-nilai">
+                <button id="submit" type="button" class="tombol-submit" onclick="cekJawaban()"><h3>Submit</h3></button>
+                <h3 id="nilai"></h3>
+            </div>
+            <div class="tombol-reset-kj" id="reset-kj">
+                <button id="lihat-kj" type="button" onclick="lihatKj()"><h3>Perlihatkan Kunci Jawaban</h3></button>
+                <button id="reset"><h3>Reset</h3></button>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <ul>
+            <li><a href="">Kebijakan Privasi</a></li>
+            <li><a href="">Syarat dan Ketentuan</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Tentang Kami</a></li>
+            <li><a href="">Kontak</a></li>
+        </ul>
+        <p>© 2022 All Rights Reserved | belajarOlim</p>
+    </div>
+    <script src="script.js"></script>
+<body>
+</html>
