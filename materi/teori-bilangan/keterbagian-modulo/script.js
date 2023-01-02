@@ -13,7 +13,7 @@ function cekJawaban(){
         }
     }
     document.getElementById("submit").style.display = "none";
-    document.getElementById("nilai").innerHTML = `Nilai kamu adalah ${((score/jawabanBenar.length)*100)}/100`;
+    document.getElementById("nilai").innerHTML = `Nilai kamu adalah ${((score/jawabanBenar.length)*100).toFixed(2)}/100`;
     document.getElementById("nilai").style.backgroundColor = "rgb(235, 62, 62)"
     document.getElementById("reset-kj").style.display = "flex";
 }
