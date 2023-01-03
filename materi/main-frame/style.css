@@ -20,6 +20,12 @@
     padding: 24px;
     color: white;
 }
+.nav ul li a.active{
+    text-decoration: none;
+    padding: 24px;
+    background-color: #ff914d;
+    color: black;
+}
 .nav ul li a:hover{
     background-color: #ff914d;
     color: black;
