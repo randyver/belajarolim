@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Style Navigation Bar*/
+.nav{
+    background-color: rgb(235, 62, 62);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: white;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    padding: 24px;
+    color: white;
+}
+.nav ul li a.active{
+    text-decoration: none;
+    padding: 24px;
+    background-color: #ff914d;
+    color: black;
+}
+.nav ul li a:hover{
+    background-color: #ff914d;
+    color: black;
+}
+
+/* style menu e-book */
+.menu-ebook{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.menu-ebook button{
+    background-color: #ff914d;
+    height: 200px;
+    width: 200px;
+    margin-left: 50px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    padding: 20px;
+}
+.menu-ebook button:hover{
+    background-color: rgb(235, 62, 62);
+    color: white;
+}
+.menu-ebook ul li a{
+    text-decoration: none;
+}
