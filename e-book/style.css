@@ -39,6 +39,7 @@
     margin-top: 40px;
     margin-left: 100px;
     margin-right: 100px;
+    height: 550px;
 }
 .menu-ebook button{
     background-color: #ff914d;
@@ -56,4 +57,32 @@
 }
 .menu-ebook ul li a{
     text-decoration: none;
+}
+
+/* style footer */
+.footer{
+    margin-top: 40px;
+    background-color: rgb(56, 55, 55);
+    height: 60px;
+}
+.footer ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    height: 30px;
+    padding: 5px;
+}
+.footer ul li{
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.footer p{
+    text-align: center;
+    color: white;
+    height: 10px;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14pt;
 }

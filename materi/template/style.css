@@ -102,6 +102,11 @@
     padding: 10px;
     border-radius: 10px;
 }
+.latihan input{
+    width: 200px;
+    height: 25px;
+    font-size: 12pt;
+}
 
 /*style footer*/
 .footer{
@@ -111,15 +116,14 @@
 }
 .footer ul{
     display: flex;
-    align-items: center;
+    justify-content: center;
     list-style: none;
     height: 30px;
     padding: 5px;
-    margin-left: 320px;
 }
 .footer ul li{
-    margin-left: 40px;
     margin-right: 40px;
+    margin-left: 40px;
 }
 .footer p{
     text-align: center;
@@ -129,4 +133,5 @@
 .footer ul li a{
     text-decoration: none;
     color: white;
+    font-size: 14pt;
 }
