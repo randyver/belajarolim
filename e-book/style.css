@@ -34,29 +34,33 @@
 }
 
 /* style menu e-book */
+h1{
+    text-align: center;
+    color: rgb(235, 62, 62);
+    margin-top: 30px;
+}
 .menu-ebook{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 40px;
     margin-left: 100px;
     margin-right: 100px;
-    height: 550px;
+    height: 1000px;
+    justify-content: center;
 }
 .menu-ebook button{
     background-color: #ff914d;
-    height: 200px;
-    width: 200px;
+    height: 350px;
+    width: 240px;
     margin-left: 50px;
     cursor: pointer;
     border: 0;
     border-radius: 10px;
     padding: 20px;
+    transition: all 0.3s;
 }
 .menu-ebook button:hover{
-    background-color: rgb(235, 62, 62);
-    color: white;
-}
-.menu-ebook ul li a{
-    text-decoration: none;
+    transform: scale(1.1);
 }
 
 /* style footer */
