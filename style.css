@@ -58,10 +58,10 @@
     border-radius: 20px;
     border: 0;
     background-color: #ff914d;
+    transition: all 0.3s;
 }
 .opsi button:hover{
-    background-color: rgb(235, 62, 62);
-    color: white;
+    transform: scale(1.1);
 }
 .footer{
     margin-top: 40px;
