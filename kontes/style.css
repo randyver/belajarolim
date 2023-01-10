@@ -32,39 +32,11 @@
     color: black;
 }
 
-/* style isi */
-.intro{
-    padding: 80px;
-    display: flex;
-    justify-content: space-between;
-    height: 320px;
-}
-.intro p{
-    text-align: justify;
-    padding: 120px;
-}
-.opsi{
-    display: flex;
-    justify-content: space-around;
-    padding: 40px;
-    height: 300px;
-}
-.opsi p{
-    text-align: justify;
-    padding: 20px;
-    font-size: medium;
-}
-.opsi button{
-    width: 300px;
-    height: 250px;
-    cursor: pointer;
-    border-radius: 20px;
-    border: 0;
-    background-color: #ff914d;
-    transition: all 0.3s;
-}
-.opsi button:hover{
-    transform: scale(1.1);
+h1{
+    text-align: center;
+    margin-top: 100px;
+    color: rgb(235, 62, 62);
+    height: 500px;
 }
 
 /* style footer */
