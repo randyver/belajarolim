@@ -2,6 +2,35 @@ form = document.getElementById("soal")
 const jawabanBenar = ["4044", "7", "735", "4", "194", "7", "6", "16", "109", "622"];
 let score = 0;
 
+function isSubmit(){
+  Swal.fire({
+          title: "Submit",
+          text: "Apakah Anda yakin ingin mengumpulkan jawaban Anda?",
+          icon: "warning",
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Iya',
+          cancelButtonText: 'Tidak'
+      }).then((result) => {
+          if (result.value) {
+              isTerkirim();
+              clearInterval(interval);
+          }else{
+             Swal.close();
+          }
+      })
+}
+
+function isTerkirim() {
+  Swal.fire(
+    'Success!',
+    'Jawaban Anda telah terkirim!',
+    'success'
+  )
+  cekJawaban();
+}
+
 function cekJawaban(){
     for(let i = 0; i < jawabanBenar.length; i++){
         if(form[i].value === jawabanBenar[i]){
@@ -9,19 +38,13 @@ function cekJawaban(){
         }
     }
     document.getElementById("submit").style.display = "none";
-    document.getElementById("answer-submit").innerHTML = "Jawaban Anda telah dikirim.";
     document.getElementById("reset-nilai").style.display = "flex";
 }
 
 function lihatNilai(){
-    alert(`Nilai kamu adalah ${((score/jawabanBenar.length)*100)}/100`);
-}
-
-function confirmSubmit(){
-  if (confirm("Apakah Anda yakin ingin mengumpulkan jawaban Anda?")) {
-    cekJawaban();
-    clearInterval(interval);
-  }
+    Swal.fire({
+      title: `Nilai kamu adalah ${((score/jawabanBenar.length)*100)}/100`
+    })
 }
 
 const timer = document.getElementById("timer");
@@ -40,7 +63,9 @@ let interval = setInterval(() => {
     }
     if (hours === 0 && minutes === 0 && seconds ===0){
       clearInterval(interval);
-      alert("Waktu habis! Jawaban Anda akan dikirimkan");
+      Swal.fire(
+        "Waktu habis! Jawaban Anda akan dikirimkan"
+      )
       cekJawaban();
     }
     timer.innerHTML = `Timer : ${hours}:${minutes}:${seconds}`;
