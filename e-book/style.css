@@ -65,28 +65,14 @@ h1{
 
 /* style footer */
 .footer{
-    margin-top: 40px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
     background-color: rgb(56, 55, 55);
-    height: 60px;
-}
-.footer ul{
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    height: 30px;
-    padding: 5px;
-}
-.footer ul li{
-    margin-right: 40px;
-    margin-left: 40px;
 }
 .footer p{
-    text-align: center;
-    color: white;
-    height: 10px;
-}
-.footer ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 14pt;
+    padding: 20px;
 }
