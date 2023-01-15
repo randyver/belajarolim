@@ -50,6 +50,69 @@
     cursor: pointer;
     z-index: 2;
 }
+/* style container */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 60px;
+}
+.intro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 600px;
+}
+.intro p{
+    text-align: justify;
+    padding: 40px;
+}
+.opsi{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px;
+    height: 300px;
+}
+.opsi p{
+    text-align: justify;
+    padding: 20px;
+    font-size: medium;
+}
+.opsi button{
+    width: 300px;
+    height: 250px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 0;
+    background-color: #ff914d;
+    transition: all 0.3s;
+    margin-top: 30px;
+}
+.opsi button:hover{
+    transform: scale(1.1);
+}
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+.opsi {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 600px) {
+    .opsi {
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+}
+img {
+    width: 50%;
+    height: auto;
+    margin-left: 120px;
+    margin-top: 40px;
+}
+
 /* hamburger menu animation */
 .menu-toggle span:nth-child(2){
     transform-origin: 0 0;
@@ -92,85 +155,13 @@
         margin-top: 900px;
     }
 }
-
-.rule h1{
-    color: rgb(235, 62, 62);
-    text-align: center;
-}
-.rule ul{
-    width: 800px;
-    border: none;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 0 auto;
-}
-
-/* style timer */
-#timer{
-    background-color: #ff914d;
-    width: 200px;
-    height: 40px;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 10px;
-    font-size: 14pt;
-}
-
-/* style judul, rulem dan soal*/
-.try-out h1{
-    text-align: center;
-    color: #ff914d;
-    margin-top: 30px;
-}
-.try-out ul{
-    margin: 80px 80px;
-    list-style: decimal;
-}
-.input-box{
-    width: 200px;
-    height: 25px;
-    font-size: 12pt;
-}
-
-/* tombol submit */
-.tombol-submit-answer{
-    margin-bottom: 60px;
-    display: flex;
-    justify-content: space-around;
-}
-#submit{
-    position: absolute;
-    height: 30px;
-    width: 80px;
-}
-
-/* tombol lihat nilai dan tombol reset */
-.tombol-reset-nilai{
+.hide {
     display: none;
-    justify-content: space-between;
-    margin-left: 600px;
-    margin-right: 600px;
-}
-
-/* style semua tombol */
-#submit, #lihat-nilai, #reset{
-    color: black;
-    background-color: #ff914d;
-    width: 100px;
-    height: 40px;
-    text-align: center;
-    cursor: pointer;
-    border: 0;
-    border-radius: 10px;
-}
-#submit:hover, #lihat-nilai:hover, #reset:hover{
-    color: white;
-    background-color: rgb(235, 62, 62);
 }
 
 /* style footer */
 .footer{
-    margin-top: 40px;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
