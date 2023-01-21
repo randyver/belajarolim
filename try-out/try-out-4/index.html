@@ -27,145 +27,147 @@
             <span></span>
         </div>
     </nav>
-    <div class="rule">
-        <h1>Try Out 4</h1>
-        <ul>
-            <li>Try Out terdiri dari 10 soal isian singkat</li>
-            <li>Try Out ini menggunakan timer 60 menit</li>
-            <li>Jawaban setiap soal dipastikan berupa bilangan bulat nonnegatif</li>
-            <li>Setiap soal yang dijawab benar diberikan 10 poin</li>
-            <li>Tidak ada pengurangan poin untuk soal yang dijawab salah ataupun dikosongkan</li>
-            <li>Kerjakan soal try out ini dengan sejujur-jujurnya untuk mengukur kemampuan Anda sebenarnya</li>
-        </ul>
-    </div>
-    <div id="timer">Timer : 01:00:00</div>
-    <div class="try-out">
-        <form id="soal">
+    <div class="container">
+        <div class="rule">
+            <h1>Try Out 4</h1>
             <ul>
-                <li>
-                    <label>
-                        <p>Diberikan <span class="math inline">\(a,b,c\)</span> bilangan
-                            genap yang berurutan dengan <span
-                            class="math inline">\(a&gt;b&gt;c\)</span>. Tentukan nilai dari <span
-                            class="math inline">\(a^2+b^2+c^2-ab-bc-ac\)</span>.</p>
-                    </label><br>
-                    <input type="text" class="input-box">
-                </li>
-                <li>
-                    <label>
-                        <p>Tentukan banyaknya cara menempatkan <span
-                            class="math inline">\(10\)</span> bola identik ke <span
-                            class="math inline">\(3\)</span> kotak dengan setiap kotak diperbolehkan
-                            kosong.</p>
-                    </label><br>
-                    <input type="text" class="input-box">
-                </li>
-                <li>
-                    <label>
-                        <p>Definisikan <span
-                            class="math inline">\(f(n)=\dfrac{3n-1}{n^3-n}\)</span> untuk setiap
-                            bilangan asli <span class="math inline">\(n&gt;1\)</span>. Tentukan
-                            bilangan asli <span class="math inline">\(n\)</span> terkecil sehingga
-                            <span class="math display">\[f(2)+f(3)+f(4)+\dots +f(n) &gt;
-                            \frac{19}{10}.\]</span></p>
-                    </label><br>
-                    <input type="text" class="input-box">
-                </li>
-                <li>
-                    <label>
-                        <p>Misalkan <span class="math inline">\(P\)</span> adalah perkalian
-                            semua bilangan prima yang kurang dari <span
-                            class="math inline">\(90\)</span>. Tentukan nilai terbesar dari <span
-                            class="math inline">\(N\)</span> sehingga untuk setiap <span
-                            class="math inline">\(n\in \{2,3,4,\dots,N\}\)</span>, bilangan <span
-                            class="math inline">\(P+n\)</span> memiliki faktor prima yang kurang
-                            dari <span class="math inline">\(90\)</span>.</p>
-                    </label><br>
-                    <input type="text" class="input-box">
-                </li>
-                <li>
-                    <label>
-                        <p>Dalam sebuah pesta terdapat sejumlah orang. Mereka melakukan
-                            salaman satu sama lain namun tidak melakukan salaman dengan dirinya.
-                            Apabila di pesta tersebut bertambah <span
-                            class="math inline">\(12\)</span> orang, maka jumlah salaman yang
-                            terjadi adalah <span class="math inline">\(2022\)</span> lebih banyak
-                            dari sebelumnya. Tentukan jumlah awal orang yang hadir di
-                            pesta.</p>
-                    </label><br>
-                    <input type="text" class="input-box">
-                </li>
-                <li>
-                    <label>
-                        <p>Panjang dari sebuah persegi panjang semuanya bilangan bulat.
-                            Luasnya sama dengan empat kali kelilingnya. Tentukan keliling persegi
-                            panjang terbesar yang mungkin.</p>
-                    </label><br>
-                    <input type="text" class="input-box">
-                </li>
-                <li>
-                    <label>
-                        <p>Diberikan fungsi <span class="math inline">\(f(x)\)</span> dengan
-                            <span class="math inline">\(f(1)=1\)</span>, <span
-                            class="math inline">\(f(2)=2\)</span>, dan memenuhi <span
-                            class="math inline">\(f(x+2)=f(x+1)-f(x)\)</span>, tentukan nilai dari
-                            <span class="math inline">\(f(2023)\)</span>.</p>
-                    </label><br>
-                    <input type="text" class="input-box">
-                </li>
-                <li>
-                    <label>
-                        <p>Tentukan bilangan asli <span class="math inline">\(n\)</span>
-                            terkecil sehingga <span
-                            class="math display">\[\sqrt{22+\sqrt{n}}+\sqrt{22-\sqrt{n}}\]</span>
-                            merupakan bilangan bulat.</p>
-                    </label><br>
-                    <input type="text" class="input-box">
-                </li>
-                <li>
-                    <label>
-                        <p>Diberikan segiempat siklik <span
-                            class="math inline">\(ABCD\)</span> dengan panjang <span
-                            class="math inline">\(DA=BC=2\)</span>, dan <span
-                            class="math inline">\(AB=4\)</span>. Apabila panjang <span
-                            class="math inline">\(CD&gt;AB\)</span> dan perpotongan garis <span
-                            class="math inline">\(DA\)</span> dan <span
-                            class="math inline">\(BC\)</span> membentuk sudut <span
-                            class="math inline">\(60^\circ\)</span>. Jika panjang jari-jari
-                            lingkaran luar <span class="math inline">\(ABCD\)</span> dapat
-                            dinyatakan dalam bentuk <span
-                            class="math inline">\(\dfrac{a\sqrt{b}}{c}\)</span> dengan <span
-                            class="math inline">\(a,b,c\)</span> bilangan asli dan <span
-                            class="math inline">\(b\)</span> tidak habis dibagi oleh bilangan
-                            kuadrat manapun selain <span class="math inline">\(1\)</span> dan <span
-                            class="math inline">\(\gcd(a,c)=1\)</span>, maka tentukan nilai dari
-                            <span class="math inline">\(a+b+c\)</span>.</p>
-                    </label><br>
-                    <input type="text" class="input-box">
-                </li>
-                <li>
-                    <label>
-                        <p>Diberikan bilangan real <span class="math inline">\(x\)</span>
-                            sehingga <span class="math display">\[\frac{5}{x}+\frac{4}{\lfloor
-                            x\rfloor}-\frac{3}{\{x\}}=2.\]</span> Tentukan hasil penjumlahan semua
-                            nilai <span class="math inline">\(2022x^2\)</span> yang
-                            mungkin.</p>
-                    </label><br>
-                    <input type="text" class="input-box">
-                </li>
+                <li>Try Out terdiri dari 10 soal isian singkat</li>
+                <li>Try Out ini menggunakan timer 60 menit</li>
+                <li>Jawaban setiap soal dipastikan berupa bilangan bulat nonnegatif</li>
+                <li>Setiap soal yang dijawab benar diberikan 10 poin</li>
+                <li>Tidak ada pengurangan poin untuk soal yang dijawab salah ataupun dikosongkan</li>
+                <li>Kerjakan soal try out ini dengan sejujur-jujurnya untuk mengukur kemampuan Anda sebenarnya</li>
             </ul>
-            <div class="tombol-submit-answer">
-                <button id="submit" type="button" onclick="isSubmit()"><h3>Submit</h3></button>
-                <h3 id="answer-submit"></h3>
-            </div>
-            <div class="tombol-reset-nilai" id="reset-nilai">
-                <button id="lihat-nilai" type="button" onclick="lihatNilai()"><h3>Lihat Nilai</h3></button>
-                <button id="reset"><h3>Reset</h3></button>
-            </div>
-        </form>
-    </div>
-    <div class="footer">
-        <p>© 2022 All Rights Reserved | belajarOlim</p>
+        </div>
+        <div id="timer">Timer : 01:00:00</div>
+        <div class="try-out">
+            <form id="soal">
+                <ul>
+                    <li>
+                        <label>
+                            <p>Diberikan <span class="math inline">\(a,b,c\)</span> bilangan
+                                genap yang berurutan dengan <span
+                                class="math inline">\(a&gt;b&gt;c\)</span>. Tentukan nilai dari <span
+                                class="math inline">\(a^2+b^2+c^2-ab-bc-ac\)</span>.</p>
+                        </label><br>
+                        <input type="text" class="input-box">
+                    </li>
+                    <li>
+                        <label>
+                            <p>Tentukan banyaknya cara menempatkan <span
+                                class="math inline">\(10\)</span> bola identik ke <span
+                                class="math inline">\(3\)</span> kotak dengan setiap kotak diperbolehkan
+                                kosong.</p>
+                        </label><br>
+                        <input type="text" class="input-box">
+                    </li>
+                    <li>
+                        <label>
+                            <p>Definisikan <span
+                                class="math inline">\(f(n)=\dfrac{3n-1}{n^3-n}\)</span> untuk setiap
+                                bilangan asli <span class="math inline">\(n&gt;1\)</span>. Tentukan
+                                bilangan asli <span class="math inline">\(n\)</span> terkecil sehingga
+                                <span class="math display">\[f(2)+f(3)+f(4)+\dots +f(n) &gt;
+                                \frac{19}{10}.\]</span></p>
+                        </label><br>
+                        <input type="text" class="input-box">
+                    </li>
+                    <li>
+                        <label>
+                            <p>Misalkan <span class="math inline">\(P\)</span> adalah perkalian
+                                semua bilangan prima yang kurang dari <span
+                                class="math inline">\(90\)</span>. Tentukan nilai terbesar dari <span
+                                class="math inline">\(N\)</span> sehingga untuk setiap <span
+                                class="math inline">\(n\in \{2,3,4,\dots,N\}\)</span>, bilangan <span
+                                class="math inline">\(P+n\)</span> memiliki faktor prima yang kurang
+                                dari <span class="math inline">\(90\)</span>.</p>
+                        </label><br>
+                        <input type="text" class="input-box">
+                    </li>
+                    <li>
+                        <label>
+                            <p>Dalam sebuah pesta terdapat sejumlah orang. Mereka melakukan
+                                salaman satu sama lain namun tidak melakukan salaman dengan dirinya.
+                                Apabila di pesta tersebut bertambah <span
+                                class="math inline">\(12\)</span> orang, maka jumlah salaman yang
+                                terjadi adalah <span class="math inline">\(2022\)</span> lebih banyak
+                                dari sebelumnya. Tentukan jumlah awal orang yang hadir di
+                                pesta.</p>
+                        </label><br>
+                        <input type="text" class="input-box">
+                    </li>
+                    <li>
+                        <label>
+                            <p>Panjang dari sebuah persegi panjang semuanya bilangan bulat.
+                                Luasnya sama dengan empat kali kelilingnya. Tentukan keliling persegi
+                                panjang terbesar yang mungkin.</p>
+                        </label><br>
+                        <input type="text" class="input-box">
+                    </li>
+                    <li>
+                        <label>
+                            <p>Diberikan fungsi <span class="math inline">\(f(x)\)</span> dengan
+                                <span class="math inline">\(f(1)=1\)</span>, <span
+                                class="math inline">\(f(2)=2\)</span>, dan memenuhi <span
+                                class="math inline">\(f(x+2)=f(x+1)-f(x)\)</span>, tentukan nilai dari
+                                <span class="math inline">\(f(2023)\)</span>.</p>
+                        </label><br>
+                        <input type="text" class="input-box">
+                    </li>
+                    <li>
+                        <label>
+                            <p>Tentukan bilangan asli <span class="math inline">\(n\)</span>
+                                terkecil sehingga <span
+                                class="math display">\[\sqrt{22+\sqrt{n}}+\sqrt{22-\sqrt{n}}\]</span>
+                                merupakan bilangan bulat.</p>
+                        </label><br>
+                        <input type="text" class="input-box">
+                    </li>
+                    <li>
+                        <label>
+                            <p>Diberikan segiempat siklik <span
+                                class="math inline">\(ABCD\)</span> dengan panjang <span
+                                class="math inline">\(DA=BC=2\)</span>, dan <span
+                                class="math inline">\(AB=4\)</span>. Apabila panjang <span
+                                class="math inline">\(CD&gt;AB\)</span> dan perpotongan garis <span
+                                class="math inline">\(DA\)</span> dan <span
+                                class="math inline">\(BC\)</span> membentuk sudut <span
+                                class="math inline">\(60^\circ\)</span>. Jika panjang jari-jari
+                                lingkaran luar <span class="math inline">\(ABCD\)</span> dapat
+                                dinyatakan dalam bentuk <span
+                                class="math inline">\(\dfrac{a\sqrt{b}}{c}\)</span> dengan <span
+                                class="math inline">\(a,b,c\)</span> bilangan asli dan <span
+                                class="math inline">\(b\)</span> tidak habis dibagi oleh bilangan
+                                kuadrat manapun selain <span class="math inline">\(1\)</span> dan <span
+                                class="math inline">\(\gcd(a,c)=1\)</span>, maka tentukan nilai dari
+                                <span class="math inline">\(a+b+c\)</span>.</p>
+                        </label><br>
+                        <input type="text" class="input-box">
+                    </li>
+                    <li>
+                        <label>
+                            <p>Diberikan bilangan real <span class="math inline">\(x\)</span>
+                                sehingga <span class="math display">\[\frac{5}{x}+\frac{4}{\lfloor
+                                x\rfloor}-\frac{3}{\{x\}}=2.\]</span> Tentukan hasil penjumlahan semua
+                                nilai <span class="math inline">\(2022x^2\)</span> yang
+                                mungkin.</p>
+                        </label><br>
+                        <input type="text" class="input-box">
+                    </li>
+                </ul>
+                <div class="tombol-submit-answer">
+                    <button id="submit" type="button" onclick="isSubmit()"><h3>Submit</h3></button>
+                    <h3 id="answer-submit"></h3>
+                </div>
+                <div class="tombol-reset-nilai" id="reset-nilai">
+                    <button id="lihat-nilai" type="button" onclick="lihatNilai()"><h3>Lihat Nilai</h3></button>
+                    <button id="reset"><h3>Reset</h3></button>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <p>© 2022 All Rights Reserved | belajarOlim</p>
+        </div>
     </div>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>

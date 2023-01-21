@@ -27,171 +27,128 @@
             <span></span>
         </div>
     </nav>
-    <div class="materi-olim">
-        <h1 id="fpb">FPB</h1>
-        <p>FPB atau merupakan singkatan dari Faktor Persekutuan Terbesar atau
-        dalam bahasa Inggris yaitu GCD (Greatest Common Divisor). GCD dari <span
-        class="math inline">\(m,n\)</span> dinyatakan dalam bentuk <span
-        class="math inline">\(\gcd(m,n)\)</span>. Berikut adalah properti yang
-        sering digunakan.</p>
-        <ul>
-        <li><p>Jika <span class="math inline">\(p\)</span> perima, maka <span
-        class="math inline">\(\gcd(p,m)=p\)</span> atau <span
-        class="math inline">\(\gcd(p,m)=1\)</span></p></li>
-        <li><p>Jika <span class="math inline">\(d=\gcd(m,n), m=dm&#39;,
-        n=dn&#39;\)</span>, maka <span
-        class="math inline">\(\gcd(m&#39;,n&#39;)=1\)</span></p></li>
-        <li><p>Jika <span class="math inline">\(d=\gcd(m,n),
-        m=d&#39;m&#39;&#39;, n=d&#39;n&#39;&#39;\)</span>, <span
-        class="math inline">\(\gcd(m&#39;&#39;,n&#39;&#39;)=1\)</span>, maka
-        <span class="math inline">\(d&#39;=d\)</span></p></li>
-        <li><p>Jika <span class="math inline">\(d&#39;\)</span> adalah pembagi
-        yang sama dari <span class="math inline">\(m\)</span> dan <span
-        class="math inline">\(n\)</span>, maka <span
-        class="math inline">\(d&#39;|\gcd(m,n)\)</span></p></li>
-        <li><p>Jika <span class="math inline">\(p^x||m\)</span> dan <span
-        class="math inline">\(p^y||n\)</span>, maka <span
-        class="math inline">\(p^{\min x,y}||\gcd(m,n)\)</span>. Lebih lanjut,
-        jika <span class="math inline">\(m=p_1^{\alpha_1}\dots
-        p_k^{\alpha_k}\)</span> dan <span
-        class="math inline">\(n=p_1^{\beta_1}\dots p_k^{\beta_k}\)</span> dengan
-        <span class="math inline">\(\alpha_i, \beta_i \geq 0,
-        i=1,\dots,k\)</span>, maka <span
-        class="math display">\[\gcd(m,n)=p_1^{\min(\alpha_1, \beta_1)}\dots
-        p_k^{\min(\alpha_k, \beta_k)}\]</span></p></li>
-        <li><p>Jika <span class="math inline">\(m=nq+r\)</span>, maka <span
-        class="math inline">\(\gcd(m,n)=\gcd(n,r)\)</span></p></li>
-        </ul>
-        <h1 id="algoritma-euclid">Algoritma Euclid</h1>
-        <p>Algoritma yang berguna untuk mencari GCD dari dua bilangan, misal dua
-        bilangan tersebut adalah <span class="math inline">\(m\)</span> dan
-        <span class="math inline">\(n\)</span>, sehingga <span
-        class="math display">\[\begin{aligned}
-            m &amp;= nq_1+r_1, 1\leq r_1&lt; n,\\
-            n &amp;= r_1q_2+r_2, 1\leq r_2&lt;r_1,\\
-            &amp;.\\
-            &amp;.\\
-            &amp;.\\
-            r_{k-2} &amp;= r_{k-1}q_k + r_k, 1\leq r_k&lt;r_{k-1}\\
-            r_{k-1} &amp;= r_kq_{k+1} + r_{k+1}, r_{k+1}=0
-        \end{aligned}\]</span> Didapatkan <span
-        class="math display">\[\gcd(m,n)=\gcd(n,r_1)=\gcd(r_1,r_2)=\dots
-        =\gcd(r_{k-1}, r_k)=r_k.\]</span> Dari hal tersebut, dimisalkan terdapat
-        dua bilangan bulat positif <span class="math inline">\(a,b\)</span>,
-        maka kita punya <span
-        class="math inline">\(\gcd(a,b)=\gcd(ka,b)\)</span> dengan <span
-        class="math inline">\(\gcd(k,b)=1\)</span> dan <span
-        class="math inline">\(\gcd(a,b)=\gcd(a,a+b)=\gcd(ab,a+b)\)</span>.</p>
-        <h1 id="kpk">KPK</h1>
-        <p>KPK yang merupakan singkatan dari Kelipatan Persekutuan Terkecil atau
-        bahasa inggrisnya yaitu LCM (Least Common Multiple). Diberikan dua
-        bilangan asli <span class="math inline">\(s,t\)</span>, maka LCM dari
-        keduanya dinyatakan dalam bentuk <span
-        class="math inline">\(\mathop{\mathrm{lcm}}(s,t)\)</span>. Berikut
-        adalah beberapa properti yang sering digunakan.</p>
-        <ul>
-        <li><p>Jika <span class="math inline">\(\mathop{\mathrm{lcm}}(s,t)=m,
-        m=ss&#39;=tt&#39;\)</span>, maka <span
-        class="math inline">\(\gcd(s&#39;,t&#39;)=1\)</span></p></li>
-        <li><p>Jika <span class="math inline">\(m&#39;\)</span> adalah kelipatan
-        yang sama dari <span class="math inline">\(s\)</span> dan <span
-        class="math inline">\(t\)</span> dan <span
-        class="math inline">\(m=ss&#39;=tt&#39;\)</span>, <span
-        class="math inline">\(\gcd(s&#39;,t&#39;)=1\)</span>, maka <span
-        class="math inline">\(m&#39;=m\)</span></p></li>
-        <li><p>Jika <span class="math inline">\(m&#39;\)</span> adalah kelipatan
-        yang sama dari <span class="math inline">\(s\)</span> dan <span
-        class="math inline">\(t\)</span>, maka <span
-        class="math inline">\(m|m&#39;\)</span></p></li>
-        <li><p>Jika <span class="math inline">\(m|s\)</span> dan <span
-        class="math inline">\(n|s\)</span>, maka <span
-        class="math inline">\(\mathop{\mathrm{lcm}}(m,n)|s\)</span></p></li>
-        <li><p>Jika <span class="math inline">\(n\)</span> adalah bilangan
-        bulat, maka <span
-        class="math inline">\(n\mathop{\mathrm{lcm}}(s,t)=\mathop{\mathrm{lcm}}(ns,nt)\)</span></p></li>
-        <li><p>Jika <span class="math inline">\(s=p_1^{\alpha_1}\dots
-        p_k^{\alpha_k}\)</span> dan <span
-        class="math inline">\(t=p_1^{\beta_1}\dots p_k^{\beta_k}, \alpha_i,
-        \beta_i \geq 0, i=1, \dots, k\)</span>, maka <span
-        class="math display">\[\mathop{\mathrm{lcm}}(s,t)=p_1^{\max(\alpha_1,
-        \beta_1)}\dots p_k^{\max(\alpha_k, \beta_k)}\]</span></p></li>
-        </ul>
-        <h1 id="hubungan-fpb-dan-kpk">Hubungan FPB dan KPK</h1>
-        <p>Untuk setiap bilangan asli <span class="math inline">\(m\)</span> dan
-        <span class="math inline">\(n\)</span>, maka <span
-        class="math display">\[mn=\gcd(m,n)\cdot
-        \mathop{\mathrm{lcm}}(m,n).\]</span></p>
-    </div>
-    <div class="latihan">
-        <h1>Latihan Soal</h1>
-        <form id="practice-form">
-            <ul>
-                <li>
-                    <label><p>Diberikan bilangan asli <span class="math inline">\(m\)</span>
-                        dan <span class="math inline">\(n\)</span> sehingga <span
-                        class="math display">\[\mathop{\mathrm{lcm}}(m,n)+\gcd(m,n)=m+n.\]</span></p></li>
-                    <input type="text">
-                    <label id="tanda0"></label>
-                    <label id="kj0"></label>
-                </li>
-                <li>
-                    <label><p>Tentukan banyaknya tripel bilangan asli <span
-                        class="math inline">\((a,b,c)\)</span> sehingga <span
-                        class="math display">\[\begin{aligned}
-                        \mathop{\mathrm{lcm}}(a,b) &amp;= 1000\\
-                        \mathop{\mathrm{lcm}}(b,c) &amp;= 2000\\
-                        \mathop{\mathrm{lcm}}(c,a) &amp;= 2000\\
-                            
-                        \end{aligned}\]</span></p></label><br>
-                    <input type="text">
-                    <label id="tanda1"></label>
-                    <label id="kj1"></label>
-                </li>
-                <li>
-                    <label><p>Tentukan nilai dari <span class="math inline">\(\gcd(n!+1,
-                        (n+1)!+1)\)</span>.</p></label><br>
-                    <input type="text">
-                    <label id="tanda2"></label>
-                    <label id="kj2"></label>
-                </li>
-                <li>
-                    <label><p>Tentukan jumlah semua bilangan bulat <span
-                        class="math inline">\(n\)</span> sehingga <span
-                        class="math inline">\((n-1)\cdot 2^n+1\)</span> adalah kuadrat
-                        sempurna.</p></label><br>
-                    <input type="text">
-                    <label id="tanda3"></label>
-                    <label id="kj3"></label>
-                </li>
-                <li>
-                    <label><p><strong>(Essay)</strong> Diberikan bilangan bulat positif berbeda
-                        <span class="math inline">\(a,b\)</span> sedemikan hingga <span
-                        class="math inline">\(ab(a+b)\)</span> habis dibagi <span
-                        class="math inline">\(a^2+ab+b^2\)</span>. Buktikan bahwa <span
-                        class="math inline">\(|a-b| &gt;\sqrt[3]{ab}\)</span>.</p></label><br>
-                </li>
-                <li>
-                    <label><p><strong>(Essay)</strong> Diberikan bilangan asli <span
-                        class="math inline">\(x,y,z\)</span> sehingga <span
-                        class="math display">\[\frac{1}{x}-\frac{1}{y}=\frac{1}{z}.\]</span>
-                        Misalkan <span class="math inline">\(h=\gcd(x,y,z)\)</span>, buktikan
-                        bahwa <span class="math inline">\(hxyz\)</span> dan <span
-                        class="math inline">\(h(y-x)\)</span> keduanya adalah kuadrat
-                        sempurna.</p></label><br>
-                </li>
-            </ul>
-            <div class="tombol-submit-nilai">
-                <button id="submit" type="button" class="tombol-submit" onclick="cekJawaban()"><h3>Submit</h3></button>
-                <h3 id="nilai"></h3>
-            </div>
-            <div class="tombol-reset-kj" id="reset-kj">
-                <button id="lihat-kj" type="button" onclick="lihatKj()"><h3>Perlihatkan Kunci Jawaban</h3></button>
-                <button id="reset"><h3>Reset</h3></button>
-            </div>
-        </form>
-    </div>
-    <div class="footer">
-        <p>© 2022 All Rights Reserved | belajarOlim</p>
+    <div class="container">
+        <div class="materi-olim">
+            <h1 id="polinomial">Polinomial</h1>
+            <p>Polinomial berderajat <span class="math inline">\(n\)</span> secara
+            umum dapat dinyatakan dalam bentuk <span
+            class="math display">\[P(x)=a_nx^n+a_{n-1}x^{n-1}+\dots
+            +a_1x+a_0\]</span> Polinomial <span class="math inline">\(P(x)\)</span>
+            dengan derajat <span class="math inline">\(n\)</span> memiliki sbebanyak
+            <span class="math inline">\(n\)</span> buah akar di bilangan kompleks
+            (akar-akar yang sama dihitung sebanyak akar yang sama). Setiap
+            polinomial memiliki paling sedikit satu buah akar, sehingga kita
+            dapatkan <span class="math inline">\(P(x)\)</span> sebagai <span
+            class="math display">\[P(x)=(x-x_1)P_1(x)\]</span> Dengan <span
+            class="math inline">\(P_1(x)\)</span> merupakan polinomial dengan
+            derajat <span class="math inline">\(n-1\)</span>. Proses ini dapat terus
+            dilanjutkan hingga kita memperoleh bentuk <span
+            class="math display">\[P(x)=a_n(x-x_1)(x-x_2)\dots (x-x_n)\]</span></p>
+            <h1 id="teorema-sisa-dan-teorema-faktor">Teorema Sisa dan Teorema
+            Faktor</h1>
+            <p>Polinomial <span class="math inline">\(P(x)\)</span> jika dibagi
+            <span class="math inline">\((x-a)\)</span>, maka sisa pembagiannya
+            adalag <span class="math inline">\(P(a)\)</span>. Teorema faktor dapat
+            diturunkan dari teorema sisa ini. Jika <span
+            class="math inline">\(r\)</span> adalah akar dari polinomial <span
+            class="math inline">\(P(x)\)</span>, maka sisa pembagian <span
+            class="math inline">\(P(x)\)</span> oleh <span
+            class="math inline">\((x-r)\)</span> adalah <span
+            class="math inline">\(0\)</span>. Algoritma pembagiannya, yaitu <span
+            class="math display">\[P(x)=Q(x)(x-a)+r\]</span> dengan <span
+            class="math inline">\(Q(x)\)</span> merupakan polinomial hasil bagi dan
+            <span class="math inline">\(r\)</span> adalah sisa pembagian.</p>
+            <h1 id="teorema-vieta">Teorema Vieta</h1>
+            <p>Jika <span class="math inline">\(P(x)\)</span> merupakan polinomial
+            dengan <span class="math display">\[P(x)=a_nx^n+a_{n-1}x^{n-1}+\dots
+            +a_2x^2+a_1x+a_0\]</span> di mana <span
+            class="math inline">\(a_0\)</span> adalah konstanta, lalu jika <span
+            class="math inline">\(x_1, x_2, \dots , x_n\)</span> merupakan akar-akar
+            dari <span class="math inline">\(P(x)\)</span> maka <span
+            class="math display">\[\begin{aligned}
+                x_1+x_2+\dots +x_{n-1}+x_n
+            &amp;=-\left(\frac{a_{n-1}}{a_{n}}\right)\\
+                x_1x_2+x_2x_3+\dots +x_{n-1}x_n &amp;=
+            \left(\frac{a_{n-2}}{a_n}\right)\\
+                x_1x_2x_3+x_2x_3x_4+\dots +x_{n-2}x_{n-1}x_n &amp;=
+            -\left(\frac{a_{n-3}}{a_n}\right)\\
+                \dots \\
+                x_1x_2x_3\dots x_{n-1}x_n &amp;= (-1)^n\left(\frac{a_0}{a_n}\right)
+            \end{aligned}\]</span> Misalkan <span
+            class="math inline">\(P(x)=ax^2+bx+c\)</span> dengan akar-akarnya <span
+            class="math inline">\(x_1\)</span> dan <span
+            class="math inline">\(x_2\)</span>, maka <span
+            class="math display">\[x_1+x_2=-\frac{b}{a} \text{ dan }
+            x_1x_2=\frac{c}{a}\]</span></p>
+        </div>
+        <div class="latihan">
+            <h1>Latihan Soal</h1>
+            <form id="practice-form">
+                <ul>
+                    <li>
+                        <label><p>Tentukan semua polinomial <span
+                            class="math inline">\(P(x)\)</span> dengan koefisien real sehingga <span
+                            class="math display">\[(x+10)P(2x)=(8x-32)P(x+6)\]</span> untuk semua
+                            bilangan real <span class="math inline">\(x\)</span> dengan <span
+                            class="math inline">\(P(1)=210\)</span>.</p></label><br>
+                        <input type="text" name="question1">
+                        <label id="tanda0"></label>
+                        <label id="kj0"></label>
+                    </li>
+                    <li>
+                        <label><p>Misalkan <span
+                            class="math inline">\(P(x)=x^4+ax^3+bx^2+cx+d\)</span> dengan <span
+                            class="math inline">\(a,b,c,d\)</span> bilangan real. Misalkan <span
+                            class="math inline">\(P(1)=827\)</span>, <span
+                            class="math inline">\(P(2)=1654\)</span>, dan <span
+                            class="math inline">\(P(3)=2481\)</span>. Tentukan nilai dari <span
+                            class="math inline">\(\frac{P(9)+P(-5)}{4}\)</span>.</p></label><br>
+                        <input type="text" name="question2">
+                        <label id="tanda1"></label>
+                        <label id="kj1"></label>
+                    </li>
+                    <li>
+                        <label><p>Apabila <span class="math inline">\(P(x)=x^3+ax^2+bx+c\)</span>
+                            dengan <span class="math inline">\(a,b,c\)</span> adalah bilangan bulat
+                            memiliki akar-akar <span class="math inline">\(a,b,c\)</span> juga, maka
+                            tentukan banyaknya polinomial <span class="math inline">\(P(x)\)</span>
+                            yang memenuhi.</p></label><br>
+                        <input type="text" name="question3">
+                        <label id="tanda2"></label>
+                        <label id="kj2"></label>
+                    </li>
+                    <li>
+                        <label><p>Misalkan <span class="math inline">\(P(x)=1+x+x^2+x^3\)</span>
+                            memiliki akar-akar <span class="math inline">\(a,b,c\)</span>. Hitunglah
+                            nilai dari <span
+                            class="math inline">\(a^{2007}+b^{2003}+c^{1999}\)</span>.</p></label><br>
+                        <input type="text" name="question4">
+                        <label id="tanda3"></label>
+                        <label id="kj3"></label>
+                    </li>
+                    <li>
+                        <label><p>Diketahui <span
+                            class="math inline">\(p(x)=a_0+a_1x+a_2x^2+\dots+a_{2021}x^{2021}+x^{2022}\)</span>
+                            yang memiliki akar-akar berupa bilangan bulat berurutan. Diketahui
+                            bahhwa <span
+                            class="math inline">\(a_0+a_1+a_2+\dots+a_{2021}=-1\)</span>, maka
+                            tentukan semua nilai yang mungkin dari <span
+                            class="math inline">\(a_0\)</span>.</p></label><br>
+                        <input type="text" name="question4">
+                        <label id="tanda4"></label>
+                        <label id="kj4"></label>
+                    </li>
+                </ul>
+                <div class="tombol-submit-nilai">
+                    <button id="submit" type="button" class="tombol-submit" onclick="cekJawaban()"><h3>Submit</h3></button>
+                    <h3 id="nilai"></h3>
+                </div>
+                <div class="tombol-reset-kj" id="reset-kj">
+                    <button id="lihat-kj" type="button" onclick="lihatKj()"><h3>Perlihatkan Kunci Jawaban</h3></button>
+                    <button id="reset"><h3>Reset</h3></button>
+                </div>
+            </form>
+        </div>
     </div>
     <script src="script.js"></script>
 <body>

@@ -96,6 +96,14 @@
         margin-left: 80px;
         margin-right: 80px;
     }
+    .sub-materi button{
+        width: 280px;
+    }
+}
+@media screen and (min-width: 700px){
+    .sub-materi button{
+        width: 600px;
+    }
 }
 .sub-materi{
     display: flex;
@@ -108,7 +116,6 @@
     background-color: #ff914d;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 600px;
     height: 60px;
     text-align: center;
     cursor: pointer;

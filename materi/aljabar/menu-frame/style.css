@@ -97,6 +97,14 @@
         margin-left: 80px;
         margin-right: 80px;
     }
+    .menu button{
+        width: 280px;
+    }
+}
+@media screen and (min-width: 700px){
+    .menu button{
+        width: 600px;
+    }
 }
 .menu{
     display: flex;
@@ -109,7 +117,6 @@
     background-color: #ff914d;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 600px;
     height: 60px;
     text-align: center;
     cursor: pointer;

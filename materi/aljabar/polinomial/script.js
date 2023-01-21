@@ -12,16 +12,14 @@ var navUl = document.querySelector(".nav ul");
 
 checkbox.addEventListener("change", function() {
   if(this.checked) {
-    container.classList.add("hide");
     navUl.style.display = "grid";
   } else {
-    container.classList.remove("hide");
     navUl.style.display = "none";
   }
 });
 
 form = document.getElementById("practice-form")
-const jawabanBenar = ["70", "70", "300", "3", "10", "13", "83"];
+const jawabanBenar = ["21", "10", "50", "9"];
 
 function cekJawaban(){
     let score = 0;

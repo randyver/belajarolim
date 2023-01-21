@@ -85,13 +85,14 @@
         width: 100%;
         transform: translateX(100%);
         transition: all 1s;
+        transform: translateX(0);
         display: none;
     }
     nav ul.slide{
         transform: translateX(0);
     }
     .footer{
-        margin-top: 300px;
+        margin-top: 100px;
     }
 }
 
@@ -100,12 +101,17 @@
 .materi-olim h1{
     text-align: center;
     color: #ff914d;
-    margin-top: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 .materi-olim{
-    margin: 80px 80px;
+    margin: 50px 50px;
     word-wrap: break-word;
     text-align: justify;
+}
+.materi-olim p{
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 .materi-olim li{
     margin-left: 40px;
@@ -118,9 +124,14 @@
     color: #ff914d;
     margin-top: 30px;
 }
+.latihan ul li p{
+    overflow: scroll;
+    overflow-y: hidden;
+}
 .latihan ul{
     margin: 80px 80px;
     list-style: decimal;
+    text-align: justify;
 }
 .tombol-submit-nilai{
     margin-bottom: 60px;

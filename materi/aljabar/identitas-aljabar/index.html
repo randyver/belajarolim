@@ -27,95 +27,97 @@
             <span></span>
         </div>
     </nav>
-    <div class="materi-olim">
-        <h1>Identitas Aljabar</h1>
-        <p>Identitas aljabar seperti memfaktorkan dan menguraikan bentuk khusus
-            aljabar yang sangat berguna dalam problem solving. Berikut adalah
-            beberapa bentuknya :</p>
-            <ol>
-            <li><p><span class="math inline">\((x+y)^2=x^2+2xy+y^2\)</span></p></li>
-            <li><p><span class="math inline">\((x-y)^2 =
-            x^2-2xy+y^2\)</span></p></li>
-            <li><p><span class="math inline">\((x+y)^3 =
-            x^3+3x^2y+3xy^2+y^3\)</span></p></li>
-            <li><p><span
-            class="math inline">\((x-y)^3=x^3-3x^2y+3xy^2-y^3\)</span></p></li>
-            <li><p><span
-            class="math inline">\((x+y+z)^2=x^2+y^2+z^2+2(xy+yz+xz)\)</span></p></li>
-            <li><p><span
-            class="math inline">\((x+1)(y+1)(z+1)=xyz+xy+yz+xz+x+y+z+1\)</span></p></li>
-            <li><p><span class="math inline">\(x^2-y^2=(x+y)(x-y)\)</span></p></li>
-            <li><p><span
-            class="math inline">\(x^3-y^3=(x-y)(x^2+xy+y^2)\)</span></p></li>
-            <li><p><span
-            class="math inline">\(x^3+y^3=(x+y)(x^2-xy+y^2)\)</span></p></li>
-            <li><p><span
-            class="math inline">\(x^3+y^3+z^3-3xyz=(x+y+z)(x^2+y^2+z^2-xy-yz-xz)\)</span></p></li>
-            <li><p><span
-            class="math inline">\(x^4+4y^4=(x^2+2y^2+2xy)(x^2+2y^2-2xy)\)</span></p></li>
-            <li><p><span
-            class="math inline">\(x^n-y^n=(x-y)(x^{n-1}+x^{n-2}y+x^{n-3}y^2+\dots
-            +xy^{n-2}+y^{n-1})\)</span> dengan <span
-            class="math inline">\(n\)</span> adalah bilangan asli</p></li>
-            <li><p><span
-            class="math inline">\(x^n+y^n=(x+y)(x^{n-1}-x^{n-2}y+x^{n-3}y^2-\dots
-            -xy^{n-2}+y^{n-1})\)</span> dengan <span
-            class="math inline">\(n\)</span> adalah bilangan asli</p></li>
-            </ol>
-    </div>
-    <div class="latihan">
-        <h1>Latihan Soal</h1>
-        <form id="practice-form">
-            <ul>
-                <li>
-                    <label><p>Diberikan bilangan real <span class="math inline">\(x,y\)</span>
-                        yang memenuhi <span class="math display">\[x+y=2\text{ dan }
-                        x^4+y^4=1234.\]</span> Tentukan nilai mutlak dari <span
-                        class="math inline">\(xy\)</span>.</p></label><br>
-                    <input type="text" name="question1">
-                    <label id="tanda0"></label>
-                    <label id="kj0"></label>
-                </li>
-                <li>
-                    <label><p>Sederhanakan nilai dari <span
-                        class="math display">\[\sqrt[3]{350+90\sqrt{15}}+\sqrt[3]{350-90\sqrt{15}}.\]</span></p></label><br>
-                    <input type="text" name="question2">
-                    <label id="tanda1"></label>
-                    <label id="kj1"></label>
-                </li>
-                <li>
-                    <label><p>Misalkan <span class="math inline">\(x,y\)</span> bilangan real
-                        positif. Definisikan <span
-                        class="math inline">\(a=1+\frac{x}{y}\)</span> dan <span
-                        class="math inline">\(b=1+\frac{y}{x}\)</span>. Jika <span
-                        class="math inline">\(a^2+b^2=15\)</span>, hitunglah <span
-                        class="math inline">\(a^3+b^3\)</span>.</p></label><br>
-                    <input type="text" name="question3">
-                    <label id="tanda2"></label>
-                    <label id="kj2"></label>
-                </li>
-                <li>
-                    <label><p>Misalkan <span class="math inline">\(a,b,c\)</span> bilangan real tak
-                        nol yang berbeda dengan <span class="math inline">\(a+b+c=0\)</span>.
-                        Tentukan <span
-                        class="math display">\[\left(\frac{a-b}{c}+\frac{b-c}{a}+\frac{c-a}{b}\right)\left(\frac{a}{b-c}+\frac{b}{c-a}+\frac{c}{a-b}\right).\]</span></p></label><br>
-                    <input type="text" name="question4">
-                    <label id="tanda3"></label>
-                    <label id="kj3"></label>
-                </li>
-            </ul>
-            <div class="tombol-submit-nilai">
-                <button id="submit" type="button" class="tombol-submit" onclick="cekJawaban()"><h3>Submit</h3></button>
-                <h3 id="nilai"></h3>
-            </div>
-            <div class="tombol-reset-kj" id="reset-kj">
-                <button id="lihat-kj" type="button" onclick="lihatKj()"><h3>Perlihatkan Kunci Jawaban</h3></button>
-                <button id="reset"><h3>Reset</h3></button>
-            </div>
-        </form>
-    </div>
-    <div class="footer">
-        <p>© 2022 All Rights Reserved | belajarOlim</p>
+    <div class="container">
+        <div class="materi-olim">
+            <h1>Identitas Aljabar</h1>
+            <p>Identitas aljabar seperti memfaktorkan dan menguraikan bentuk khusus
+                aljabar yang sangat berguna dalam problem solving. Berikut adalah
+                beberapa bentuknya :</p>
+                <ol>
+                <li><p><span class="math inline">\((x+y)^2=x^2+2xy+y^2\)</span></p></li>
+                <li><p><span class="math inline">\((x-y)^2 =
+                x^2-2xy+y^2\)</span></p></li>
+                <li><p><span class="math inline">\((x+y)^3 =
+                x^3+3x^2y+3xy^2+y^3\)</span></p></li>
+                <li><p><span
+                class="math inline">\((x-y)^3=x^3-3x^2y+3xy^2-y^3\)</span></p></li>
+                <li><p><span
+                class="math inline">\((x+y+z)^2=x^2+y^2+z^2+2(xy+yz+xz)\)</span></p></li>
+                <li><p><span
+                class="math inline">\((x+1)(y+1)(z+1)=xyz+xy+yz+xz+x+y+z+1\)</span></p></li>
+                <li><p><span class="math inline">\(x^2-y^2=(x+y)(x-y)\)</span></p></li>
+                <li><p><span
+                class="math inline">\(x^3-y^3=(x-y)(x^2+xy+y^2)\)</span></p></li>
+                <li><p><span
+                class="math inline">\(x^3+y^3=(x+y)(x^2-xy+y^2)\)</span></p></li>
+                <li><p><span
+                class="math inline">\(x^3+y^3+z^3-3xyz=(x+y+z)(x^2+y^2+z^2-xy-yz-xz)\)</span></p></li>
+                <li><p><span
+                class="math inline">\(x^4+4y^4=(x^2+2y^2+2xy)(x^2+2y^2-2xy)\)</span></p></li>
+                <li><p><span
+                class="math inline">\(x^n-y^n=(x-y)(x^{n-1}+x^{n-2}y+x^{n-3}y^2+\dots
+                +xy^{n-2}+y^{n-1})\)</span> dengan <span
+                class="math inline">\(n\)</span> adalah bilangan asli</p></li>
+                <li><p><span
+                class="math inline">\(x^n+y^n=(x+y)(x^{n-1}-x^{n-2}y+x^{n-3}y^2-\dots
+                -xy^{n-2}+y^{n-1})\)</span> dengan <span
+                class="math inline">\(n\)</span> adalah bilangan asli</p></li>
+                </ol>
+        </div>
+        <div class="latihan">
+            <h1>Latihan Soal</h1>
+            <form id="practice-form">
+                <ul>
+                    <li>
+                        <label><p>Diberikan bilangan real <span class="math inline">\(x,y\)</span>
+                            yang memenuhi <span class="math display">\[x+y=2\text{ dan }
+                            x^4+y^4=1234.\]</span> Tentukan nilai mutlak dari <span
+                            class="math inline">\(xy\)</span>.</p></label><br>
+                        <input type="text" name="question1">
+                        <label id="tanda0"></label>
+                        <label id="kj0"></label>
+                    </li>
+                    <li>
+                        <label><p>Sederhanakan nilai dari <span
+                            class="math display">\[\sqrt[3]{350+90\sqrt{15}}+\sqrt[3]{350-90\sqrt{15}}.\]</span></p></label><br>
+                        <input type="text" name="question2">
+                        <label id="tanda1"></label>
+                        <label id="kj1"></label>
+                    </li>
+                    <li>
+                        <label><p>Misalkan <span class="math inline">\(x,y\)</span> bilangan real
+                            positif. Definisikan <span
+                            class="math inline">\(a=1+\frac{x}{y}\)</span> dan <span
+                            class="math inline">\(b=1+\frac{y}{x}\)</span>. Jika <span
+                            class="math inline">\(a^2+b^2=15\)</span>, hitunglah <span
+                            class="math inline">\(a^3+b^3\)</span>.</p></label><br>
+                        <input type="text" name="question3">
+                        <label id="tanda2"></label>
+                        <label id="kj2"></label>
+                    </li>
+                    <li>
+                        <label><p>Misalkan <span class="math inline">\(a,b,c\)</span> bilangan real tak
+                            nol yang berbeda dengan <span class="math inline">\(a+b+c=0\)</span>.
+                            Tentukan <span
+                            class="math display">\[\left(\frac{a-b}{c}+\frac{b-c}{a}+\frac{c-a}{b}\right)\left(\frac{a}{b-c}+\frac{b}{c-a}+\frac{c}{a-b}\right).\]</span></p></label><br>
+                        <input type="text" name="question4">
+                        <label id="tanda3"></label>
+                        <label id="kj3"></label>
+                    </li>
+                </ul>
+                <div class="tombol-submit-nilai">
+                    <button id="submit" type="button" class="tombol-submit" onclick="cekJawaban()"><h3>Submit</h3></button>
+                    <h3 id="nilai"></h3>
+                </div>
+                <div class="tombol-reset-kj" id="reset-kj">
+                    <button id="lihat-kj" type="button" onclick="lihatKj()"><h3>Perlihatkan Kunci Jawaban</h3></button>
+                    <button id="reset"><h3>Reset</h3></button>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <p>© 2022 All Rights Reserved | belajarOlim</p>
+        </div>
     </div>
     <script src="script.js"></script>
 <body>

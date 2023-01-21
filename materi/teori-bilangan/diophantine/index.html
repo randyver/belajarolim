@@ -27,191 +27,193 @@
             <span></span>
         </div>
     </nav>
-    <div class="materi-olim">
-        <h1>Persamaan Diophantine</h1>
-        <h1 id="persamaan-diophantine-linear">Persamaan Diophantine Linear</h1>
-        <p>Misalkan <span class="math inline">\(a,b\)</span>, dan <span
-        class="math inline">\(c\)</span> adalah bilangan-bilangan bulat.
-        Persamaan Diophantine berbentuk <span
-        class="math inline">\(ax+by=c\)</span> disebut persamaan Diophantine
-        linear dan setiap pasangan bilangan bulat <span
-        class="math inline">\((x,y)\)</span> yang memenuhi <span
-        class="math inline">\(ax+by=c\)</span> disebut solusi.</p>
-        <h2 id="teorema-1">Teorema 1</h2>
-        <p>Persamaan Diophantine <span class="math inline">\(ax+by=c\)</span>
-        mempunyai solusi jika dan hanya jika <span
-        class="math inline">\(gcd(a,b)|c\)</span>.<br />
-        <strong>Contoh 1</strong><br />
-        Tentukan banyaknya bilangan bulat <span class="math inline">\(1\leq n
-        \leq 2021\)</span> yang dapat dinyatakan dalam bentuk <span
-        class="math inline">\(9x+15y\)</span> untuk suatu bilangan bulat <span
-        class="math inline">\(x\)</span> dan <span
-        class="math inline">\(y\)</span>.<br />
-        <strong>Jawab:</strong><br />
-        Perhatikan bahwa <span class="math inline">\(gcd(9,15)=3\)</span>.
-        Berdasarkan teorema di atas, hanya bilangan yang habis dibagi <span
-        class="math inline">\(3\)</span> yang dapat dinyatakan dalam bentuk
-        <span class="math inline">\(9x+15y\)</span> untuk suatu bilangan bulat
-        <span class="math inline">\(x\)</span> dan <span
-        class="math inline">\(y\)</span>. Sehingga untuk <span
-        class="math inline">\(1 \leq n \leq 2021\)</span> yang terbagi oleh
-        <span class="math inline">\(3\)</span> ada <span
-        class="math inline">\(673\)</span> bilangan.</p>
-        <h2 id="teorema-2">Teorema 2</h2>
-        <p>Jika Persamaan Diophantine <span
-        class="math inline">\(ax+by=c\)</span> mempunyai solusi <span
-        class="math inline">\((x_0,y_0)\)</span> maka persamaan tersebut
-        mempunyai tak hingga banyaknya solusi dan setiap solusinya berbentuk</p>
-        <div class="center">
-        <p><span class="math inline">\(x=x_0+k\dfrac{b}{gcd(a,b)}\)</span> dan
-        <span class="math inline">\(y=y_0-k\dfrac{a}{gcd(a,b)}\)</span></p>
+    <div class="container">
+        <div class="materi-olim">
+            <h1>Persamaan Diophantine</h1>
+            <h1 id="persamaan-diophantine-linear">Persamaan Diophantine Linear</h1>
+            <p>Misalkan <span class="math inline">\(a,b\)</span>, dan <span
+            class="math inline">\(c\)</span> adalah bilangan-bilangan bulat.
+            Persamaan Diophantine berbentuk <span
+            class="math inline">\(ax+by=c\)</span> disebut persamaan Diophantine
+            linear dan setiap pasangan bilangan bulat <span
+            class="math inline">\((x,y)\)</span> yang memenuhi <span
+            class="math inline">\(ax+by=c\)</span> disebut solusi.</p>
+            <h2 id="teorema-1">Teorema 1</h2>
+            <p>Persamaan Diophantine <span class="math inline">\(ax+by=c\)</span>
+            mempunyai solusi jika dan hanya jika <span
+            class="math inline">\(gcd(a,b)|c\)</span>.<br />
+            <strong>Contoh 1</strong><br />
+            Tentukan banyaknya bilangan bulat <span class="math inline">\(1\leq n
+            \leq 2021\)</span> yang dapat dinyatakan dalam bentuk <span
+            class="math inline">\(9x+15y\)</span> untuk suatu bilangan bulat <span
+            class="math inline">\(x\)</span> dan <span
+            class="math inline">\(y\)</span>.<br />
+            <strong>Jawab:</strong><br />
+            Perhatikan bahwa <span class="math inline">\(gcd(9,15)=3\)</span>.
+            Berdasarkan teorema di atas, hanya bilangan yang habis dibagi <span
+            class="math inline">\(3\)</span> yang dapat dinyatakan dalam bentuk
+            <span class="math inline">\(9x+15y\)</span> untuk suatu bilangan bulat
+            <span class="math inline">\(x\)</span> dan <span
+            class="math inline">\(y\)</span>. Sehingga untuk <span
+            class="math inline">\(1 \leq n \leq 2021\)</span> yang terbagi oleh
+            <span class="math inline">\(3\)</span> ada <span
+            class="math inline">\(673\)</span> bilangan.</p>
+            <h2 id="teorema-2">Teorema 2</h2>
+            <p>Jika Persamaan Diophantine <span
+            class="math inline">\(ax+by=c\)</span> mempunyai solusi <span
+            class="math inline">\((x_0,y_0)\)</span> maka persamaan tersebut
+            mempunyai tak hingga banyaknya solusi dan setiap solusinya berbentuk</p>
+            <div class="center">
+            <p><span class="math inline">\(x=x_0+k\dfrac{b}{gcd(a,b)}\)</span> dan
+            <span class="math inline">\(y=y_0-k\dfrac{a}{gcd(a,b)}\)</span></p>
+            </div>
+            <p>untuk sebarang bilangan bulat <span class="math inline">\(k\)</span>.
+            <br><strong>Contoh 1</strong><br />
+            Tentukan semua solusi dari persamaan <span
+            class="math inline">\(6x+8y=12\)</span> untuk <span
+            class="math inline">\(x\)</span> dan <span
+            class="math inline">\(y\)</span> bulat.<br />
+            <strong>Jawab</strong><br />
+            Kita punya <span class="math inline">\(gcd(6,8)=2\)</span> dan <span
+            class="math inline">\(2|12\)</span>, maka persamaan ini punya solusi.
+            Mudah dipahami bahwa salah satu solusinya adalah <span
+            class="math inline">\((2,0)\)</span>. Sehingga solusi umumnya adalah
+            <span class="math inline">\(x=2+4k\)</span> dan <span
+            class="math inline">\(y=-3k\)</span> untuk sebarang bilangan bulat <span
+            class="math inline">\(k\)</span>. <br><strong>Contoh 2</strong><br />
+            Ada berapa banyak pasangan bilangan asli <span
+            class="math inline">\((x,y)\)</span> yang memenuhi persamaan <span
+            class="math inline">\(4x+6y=48\)</span>?<br />
+            <strong>Jawab:</strong><br />
+            Salah satu solusi dari persamaan ini yaitu <span
+            class="math inline">\((12,0)\)</span>, maka solusi umumnya adalah <span
+            class="math inline">\(x=12+3k\)</span> dan <span
+            class="math inline">\(y=-2k\)</span> untuk sebarang bilangan bulat <span
+            class="math inline">\(k\)</span>. Karena <span
+            class="math inline">\(x,y&gt;0\)</span>, maka <span
+            class="math inline">\(12+3k&gt;0\)</span>, didapat <span
+            class="math inline">\(k&gt;-4\)</span> dan <span
+            class="math inline">\(-2k&gt;0\)</span>, didapat <span
+            class="math inline">\(k&lt;0\)</span>, sehingga <span
+            class="math inline">\(-4&lt;k&lt;0\)</span>. Karena <span
+            class="math inline">\(k\)</span> bulat maka <span
+            class="math inline">\(-3 \leq k \leq -1\)</span>. Dengan demikian, ada
+            <span class="math inline">\(3\)</span> pasangan bilangan asli <span
+            class="math inline">\((x,y)\)</span> yang memenuhi <span
+            class="math inline">\(4x+6y=48\)</span>.</p>
+            <h1 id="persamaan-diophantine-non-linear">Persamaan Diophantine
+            Non-Linear</h1>
+            <h2 id="teknik-pemfaktoran">Teknik Pemfaktoran</h2>
+            <p>Memfaktorkan suatu persamaan agar lebih mudah diselesaikan.<br />
+            <strong>Contoh 1</strong><br />
+            Tentukan solusi bulat dari persamaan <span
+            class="math inline">\(xy=2x-y\)</span><br />
+            <h2 id="teknik-pembatasan">Teknik Pembatasan</h2>
+            <p>Memberi batasan kepada beberapa variabel, biasanya teknik ini
+            digunakan dalam menyelesaikan persamaan yang memiliki beberapa variabel
+            yang siklik.<br />
+            <strong>Contoh 1</strong><br />
+            Tentukan bilangan asli <span class="math inline">\(a,b,c\)</span>
+            sehingga <span
+            class="math inline">\(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}=1\)</span>.<br />
+            <h2 id="teknik-keterbagian">Teknik Keterbagian</h2>
+            <p>Umumnya meninjau modulo pada suatu persamaan.<br />
+            <strong>Contoh 1</strong><br />
+            Buktikan bahwa tidak ada bilangan bulat <span
+            class="math inline">\(x\)</span> dan <span
+            class="math inline">\(y\)</span> yang memenuhi persamaan <span
+            class="math display">\[(x+1)^2+(x+2)^2+\dots +(x+99)^2=y^2.\]</span>
+            <h2 id="infinite-descent">Infinite Descent</h2>
+            <p>Tidak ada barisan bilangan bulat nonnegatif sehingga <span
+            class="math display">\[n_1 &gt;n_2 &gt;\dots\]</span> Dengan kata lain,
+            jika <span class="math inline">\(n_0\)</span> adalah bilangan bulat
+            positif terkecil <span class="math inline">\(n\)</span> sehingga <span
+            class="math inline">\(P(n)\)</span> benar, maka <span
+            class="math inline">\(P(n)\)</span> salah untuk setiap <span
+            class="math inline">\(n&lt;n_0\)</span>.<br />
+            <strong>Contoh 1</strong><br />
+            Tentukan semua solusi bilangan bulat nonnegatif yang memenuhi <span
+            class="math display">\[x^3+2y^3=4z^3.\]</span></p>
         </div>
-        <p>untuk sebarang bilangan bulat <span class="math inline">\(k\)</span>.
-        <br><strong>Contoh 1</strong><br />
-        Tentukan semua solusi dari persamaan <span
-        class="math inline">\(6x+8y=12\)</span> untuk <span
-        class="math inline">\(x\)</span> dan <span
-        class="math inline">\(y\)</span> bulat.<br />
-        <strong>Jawab</strong><br />
-        Kita punya <span class="math inline">\(gcd(6,8)=2\)</span> dan <span
-        class="math inline">\(2|12\)</span>, maka persamaan ini punya solusi.
-        Mudah dipahami bahwa salah satu solusinya adalah <span
-        class="math inline">\((2,0)\)</span>. Sehingga solusi umumnya adalah
-        <span class="math inline">\(x=2+4k\)</span> dan <span
-        class="math inline">\(y=-3k\)</span> untuk sebarang bilangan bulat <span
-        class="math inline">\(k\)</span>. <br><strong>Contoh 2</strong><br />
-        Ada berapa banyak pasangan bilangan asli <span
-        class="math inline">\((x,y)\)</span> yang memenuhi persamaan <span
-        class="math inline">\(4x+6y=48\)</span>?<br />
-        <strong>Jawab:</strong><br />
-        Salah satu solusi dari persamaan ini yaitu <span
-        class="math inline">\((12,0)\)</span>, maka solusi umumnya adalah <span
-        class="math inline">\(x=12+3k\)</span> dan <span
-        class="math inline">\(y=-2k\)</span> untuk sebarang bilangan bulat <span
-        class="math inline">\(k\)</span>. Karena <span
-        class="math inline">\(x,y&gt;0\)</span>, maka <span
-        class="math inline">\(12+3k&gt;0\)</span>, didapat <span
-        class="math inline">\(k&gt;-4\)</span> dan <span
-        class="math inline">\(-2k&gt;0\)</span>, didapat <span
-        class="math inline">\(k&lt;0\)</span>, sehingga <span
-        class="math inline">\(-4&lt;k&lt;0\)</span>. Karena <span
-        class="math inline">\(k\)</span> bulat maka <span
-        class="math inline">\(-3 \leq k \leq -1\)</span>. Dengan demikian, ada
-        <span class="math inline">\(3\)</span> pasangan bilangan asli <span
-        class="math inline">\((x,y)\)</span> yang memenuhi <span
-        class="math inline">\(4x+6y=48\)</span>.</p>
-        <h1 id="persamaan-diophantine-non-linear">Persamaan Diophantine
-        Non-Linear</h1>
-        <h2 id="teknik-pemfaktoran">Teknik Pemfaktoran</h2>
-        <p>Memfaktorkan suatu persamaan agar lebih mudah diselesaikan.<br />
-        <strong>Contoh 1</strong><br />
-        Tentukan solusi bulat dari persamaan <span
-        class="math inline">\(xy=2x-y\)</span><br />
-        <h2 id="teknik-pembatasan">Teknik Pembatasan</h2>
-        <p>Memberi batasan kepada beberapa variabel, biasanya teknik ini
-        digunakan dalam menyelesaikan persamaan yang memiliki beberapa variabel
-        yang siklik.<br />
-        <strong>Contoh 1</strong><br />
-        Tentukan bilangan asli <span class="math inline">\(a,b,c\)</span>
-        sehingga <span
-        class="math inline">\(\frac{1}{a}+\frac{1}{b}+\frac{1}{c}=1\)</span>.<br />
-        <h2 id="teknik-keterbagian">Teknik Keterbagian</h2>
-        <p>Umumnya meninjau modulo pada suatu persamaan.<br />
-        <strong>Contoh 1</strong><br />
-        Buktikan bahwa tidak ada bilangan bulat <span
-        class="math inline">\(x\)</span> dan <span
-        class="math inline">\(y\)</span> yang memenuhi persamaan <span
-        class="math display">\[(x+1)^2+(x+2)^2+\dots +(x+99)^2=y^2.\]</span>
-        <h2 id="infinite-descent">Infinite Descent</h2>
-        <p>Tidak ada barisan bilangan bulat nonnegatif sehingga <span
-        class="math display">\[n_1 &gt;n_2 &gt;\dots\]</span> Dengan kata lain,
-        jika <span class="math inline">\(n_0\)</span> adalah bilangan bulat
-        positif terkecil <span class="math inline">\(n\)</span> sehingga <span
-        class="math inline">\(P(n)\)</span> benar, maka <span
-        class="math inline">\(P(n)\)</span> salah untuk setiap <span
-        class="math inline">\(n&lt;n_0\)</span>.<br />
-        <strong>Contoh 1</strong><br />
-        Tentukan semua solusi bilangan bulat nonnegatif yang memenuhi <span
-        class="math display">\[x^3+2y^3=4z^3.\]</span></p>
-    </div>
-    <div class="latihan">
-        <h1>Latihan Soal</h1>
-        <form id="practice-form">
-            <ul>
-                <li>
-                    <label><p>Tentukan jumlah semua bilangan bulat <span
-                        class="math inline">\(x\)</span> sehingga <span
-                        class="math inline">\(x^4+4\)</span> bilangan prima.</p></label><br>
-                    <input type="text">
-                    <label id="tanda0"></label>
-                    <label id="kj0"></label>
-                </li>
-                <li>
-                    <label><p>Tentukan banyaknya kemungkinan segitiga siku-siku dengan ketiga
-                        sisinya bilangan bulat sehingga luas nya sama dengan keliling
-                        nya.</p></label><br>
-                    <input type="text">
-                    <label id="tanda1"></label>
-                    <label id="kj1"></label>
-                </li>
-                <li>
-                    <label><p>Tentukan jumlah semua kemungkinan nilai dari <span
-                        class="math inline">\(x+y\)</span> dengan <span class="math inline">\(x,
-                        y\)</span> bilangan asli yang memenuhi <span
-                        class="math display">\[x^2-y!=2001.\]</span></p></label><br>
-                    <input type="text">
-                    <label id="tanda2"></label>
-                    <label id="kj2"></label>
-                </li>
-                <li>
-                    <label><p>Tentukan jumlah semua nilai <span
-                        class="math inline">\(x+y\)</span> yang mungkin sehingga pasangan
-                        bilangan asli <span class="math inline">\((x,y)\)</span> memenuhi
-                        persamaan <span class="math display">\[3^x-2^y=7.\]</span></p></label><br>
-                    <input type="text">
-                    <label id="tanda3"></label>
-                    <label id="kj3"></label>
-                </li>
-                <li>
-                    <label><p>Tentukan jumlah semua nilai dari <span
-                        class="math inline">\(a+b+c+d\)</span> yang mungkin dengan quadratupel
-                        <span class="math inline">\((a,b,c,d)\)</span> bilangan asli yang
-                        memenuhi <span
-                        class="math display">\[a^2+b^2+c^2+d^2=3(a+b+c+d).\]</span></p></label><br>
-                    <input type="text">
-                    <label id="tanda4"></label>
-                    <label id="kj4"></label>
-                </li>
-                <li>
-                    <label><p>Tentukan banyaknya triple bilangan bulat <span
-                        class="math inline">\((x,y,z)\)</span> sehingga <span
-                        class="math display">\[3(xy+yz+zx)=4xyz.\]</span></p></label><br>
-                    <input type="text">
-                    <label id="tanda5"></label>
-                    <label id="kj5"></label>
-                </li>
-                <li>
-                    <label><p>Apabila pasangan bilangan bulat <span
-                        class="math inline">\(x,y\)</span> memenuhi <span
-                        class="math display">\[x^6+3x^3+1=y^4.\]</span> Tentukan jumlah semua
-                        nilai <span class="math inline">\(x+y\)</span> yang mungkin.</p></label><br>
-                    <input type="text">
-                    <label id="tanda6"></label>
-                    <label id="kj6"></label>
-                </li>
-            </ul>
-            <div class="tombol-submit-nilai">
-                <button id="submit" type="button" class="tombol-submit" onclick="cekJawaban()"><h3>Submit</h3></button>
-                <h3 id="nilai"></h3>
-            </div>
-            <div class="tombol-reset-kj" id="reset-kj">
-                <button id="lihat-kj" type="button" onclick="lihatKj()"><h3>Perlihatkan Kunci Jawaban</h3></button>
-                <button id="reset"><h3>Reset</h3></button>
-            </div>
-        </form>
-    </div>
-    <div class="footer">
-        <p>© 2022 All Rights Reserved | belajarOlim</p>
+        <div class="latihan">
+            <h1>Latihan Soal</h1>
+            <form id="practice-form">
+                <ul>
+                    <li>
+                        <label><p>Tentukan jumlah semua bilangan bulat <span
+                            class="math inline">\(x\)</span> sehingga <span
+                            class="math inline">\(x^4+4\)</span> bilangan prima.</p></label><br>
+                        <input type="text">
+                        <label id="tanda0"></label>
+                        <label id="kj0"></label>
+                    </li>
+                    <li>
+                        <label><p>Tentukan banyaknya kemungkinan segitiga siku-siku dengan ketiga
+                            sisinya bilangan bulat sehingga luas nya sama dengan keliling
+                            nya.</p></label><br>
+                        <input type="text">
+                        <label id="tanda1"></label>
+                        <label id="kj1"></label>
+                    </li>
+                    <li>
+                        <label><p>Tentukan jumlah semua kemungkinan nilai dari <span
+                            class="math inline">\(x+y\)</span> dengan <span class="math inline">\(x,
+                            y\)</span> bilangan asli yang memenuhi <span
+                            class="math display">\[x^2-y!=2001.\]</span></p></label><br>
+                        <input type="text">
+                        <label id="tanda2"></label>
+                        <label id="kj2"></label>
+                    </li>
+                    <li>
+                        <label><p>Tentukan jumlah semua nilai <span
+                            class="math inline">\(x+y\)</span> yang mungkin sehingga pasangan
+                            bilangan asli <span class="math inline">\((x,y)\)</span> memenuhi
+                            persamaan <span class="math display">\[3^x-2^y=7.\]</span></p></label><br>
+                        <input type="text">
+                        <label id="tanda3"></label>
+                        <label id="kj3"></label>
+                    </li>
+                    <li>
+                        <label><p>Tentukan jumlah semua nilai dari <span
+                            class="math inline">\(a+b+c+d\)</span> yang mungkin dengan quadratupel
+                            <span class="math inline">\((a,b,c,d)\)</span> bilangan asli yang
+                            memenuhi <span
+                            class="math display">\[a^2+b^2+c^2+d^2=3(a+b+c+d).\]</span></p></label><br>
+                        <input type="text">
+                        <label id="tanda4"></label>
+                        <label id="kj4"></label>
+                    </li>
+                    <li>
+                        <label><p>Tentukan banyaknya triple bilangan bulat <span
+                            class="math inline">\((x,y,z)\)</span> sehingga <span
+                            class="math display">\[3(xy+yz+zx)=4xyz.\]</span></p></label><br>
+                        <input type="text">
+                        <label id="tanda5"></label>
+                        <label id="kj5"></label>
+                    </li>
+                    <li>
+                        <label><p>Apabila pasangan bilangan bulat <span
+                            class="math inline">\(x,y\)</span> memenuhi <span
+                            class="math display">\[x^6+3x^3+1=y^4.\]</span> Tentukan jumlah semua
+                            nilai <span class="math inline">\(x+y\)</span> yang mungkin.</p></label><br>
+                        <input type="text">
+                        <label id="tanda6"></label>
+                        <label id="kj6"></label>
+                    </li>
+                </ul>
+                <div class="tombol-submit-nilai">
+                    <button id="submit" type="button" class="tombol-submit" onclick="cekJawaban()"><h3>Submit</h3></button>
+                    <h3 id="nilai"></h3>
+                </div>
+                <div class="tombol-reset-kj" id="reset-kj">
+                    <button id="lihat-kj" type="button" onclick="lihatKj()"><h3>Perlihatkan Kunci Jawaban</h3></button>
+                    <button id="reset"><h3>Reset</h3></button>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <p>© 2022 All Rights Reserved | belajarOlim</p>
+        </div>
     </div>
     <script src="script.js"></script>
 <body>

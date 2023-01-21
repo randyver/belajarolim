@@ -10,11 +10,14 @@ menuToggle.addEventListener('click', function(){
 
 var checkbox = document.querySelector("input[type='checkbox']");
 var container = document.querySelector(".container");
+var navUl = document.querySelector(".nav ul");
 
 checkbox.addEventListener("change", function() {
   if(this.checked) {
     container.classList.add("hide");
+    navUl.style.display = "grid";
   } else {
     container.classList.remove("hide");
+    navUl.style.display = "none";
   }
 });

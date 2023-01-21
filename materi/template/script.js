@@ -9,11 +9,15 @@ var checkbox = document.querySelector("input[type='checkbox']");
 var container = document.querySelector(".container");
 
 checkbox.addEventListener("change", function() {
-  if(this.checked) {
-    container.classList.add("hide");
-  } else {
-    container.classList.remove("hide");
-  }
+    if(this.checked) {
+        materiOlim.classList.add("hide");
+        latihanSoal.classList.add("hide");
+        navUl.style.display = "grid";
+      } else {
+        materiOlim.classList.remove("hide");
+        latihanSoal.classList.remove("hide");
+        navUl.style.display = "none";
+      }
 });
 
 form = document.getElementById("practice-form")

@@ -85,6 +85,8 @@
         width: 100%;
         transform: translateX(100%);
         transition: all 1s;
+        transform: translateX(0);
+        display: none;
     }
     nav ul.slide{
         transform: translateX(0);
@@ -96,6 +98,7 @@
         margin-top: 50px;
     }
 }
+
 
 /* style menu e-book */
 h1{
@@ -125,6 +128,9 @@ h1{
 }
 .menu-ebook button:hover{
     transform: scale(1.1);
+}
+.hide{
+    display: none;
 }
 
 /* style footer */

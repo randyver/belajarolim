@@ -27,146 +27,148 @@
             <span></span>
         </div>
     </nav>
-    <div class="rule">
-        <h1>Try Out 3</h1>
-        <ul>
-            <li>Try Out terdiri dari 10 soal isian singkat</li>
-            <li>Try Out ini menggunakan timer 60 menit</li>
-            <li>Jawaban setiap soal dipastikan berupa bilangan bulat nonnegatif</li>
-            <li>Setiap soal yang dijawab benar diberikan 10 poin</li>
-            <li>Tidak ada pengurangan poin untuk soal yang dijawab salah ataupun dikosongkan</li>
-            <li>Kerjakan soal try out ini dengan sejujur-jujurnya untuk mengukur kemampuan Anda sebenarnya</li>
-        </ul>
-    </div>
-    <div id="timer">Timer : 01:00:00</div>
-    <div class="try-out">
-        <form id="soal">
+    <div class="container">
+        <div class="rule">
+            <h1>Try Out 3</h1>
             <ul>
-                <li>
-                    <label>
-                        <p>Tentukan minimal banyaknya bilangan bulat yang perlu diambil dari
-                            himpunan <span class="math display">\[\{11,12,13,14,...,98,99\}\]</span>
-                            agar pasti terdapat 2 bilangan yang selisihnya terbentuk dari <span
-                            class="math inline">\(2\)</span> digit yang sama.</p>
-                    </label><br>
-                    <input type="text" class="input-box">
-                </li>
-                <li>
-                    <label>
-                        <p>Tentukan banyaknya pasangan bilangan bulat <span
-                            class="math inline">\((m,n)\)</span> yang memenuhi <span
-                            class="math inline">\(m^2+2m-35=2^n\)</span>.</p>
-                    </label><br>
-                    <input type="text" class="input-box">
-                </li>
-                <li>
-                    <label>
-                        <p>Diberikan bilangan real nonnegatif <span
-                            class="math inline">\(x,y,z\)</span> yang memenuhi <span
-                            class="math inline">\(xyz=\frac{2}{3}\)</span>. Tentukan nilai minimum
-                            dari <span
-                            class="math display">\[x^2+6xy+18y^2+12yz+4z^2.\]</span></p>
-                    </label><br>
-                    <input type="text" class="input-box">
-                </li>
-                <li>
-                    <label>
-                        <p>Tentukan jumlah semua bilangan bulat <span
-                            class="math inline">\(k\)</span> sehingga terdapat bilangan prima <span
-                            class="math inline">\(p\)</span> dan bilangan bulat <span
-                            class="math inline">\(n\)</span> yang memenuhi <span
-                            class="math display">\[2k^2+k-6=p^n.\]</span></p>
-                    </label><br>
-                    <input type="text" class="input-box">
-                </li>
-                <li>
-                    <label>
-                        <p>Diberikan segitiga <span class="math inline">\(ABC\)</span>
-                            dengan <span class="math inline">\(\angle ABC=75^\circ\)</span> dan
-                            <span class="math inline">\(\angle BAC\)</span> tumpul. Titik <span
-                            class="math inline">\(D\)</span> dan <span
-                            class="math inline">\(E\)</span> berada di <span
-                            class="math inline">\(AC\)</span> dan <span
-                            class="math inline">\(BC\)</span> berturut-turut sehingga <span
-                            class="math inline">\(\dfrac{AB}{BC}=\dfrac{DE}{EC}\)</span> dan <span
-                            class="math inline">\(\angle DEC=\angle EDC\)</span>. Tentukan besar
-                            <span class="math inline">\(\angle DEC\)</span> dalam derajat.</p>
-                    </label><br>
-                    <input type="text" class="input-box">
-                </li>
-                <li>
-                    <label>
-                        <p>Misalkan <span class="math inline">\(S(n)\)</span> menyatakan
-                            jumlah digit dari bilangan asli <span class="math inline">\(n\)</span>.
-                            Apabila <span class="math inline">\(S(n)=2018\)</span>, tentukan nilai
-                            terkecil dari <span class="math inline">\(S(n+1)\)</span>.</p>
-                    </label><br>
-                    <input type="text" class="input-box">
-                </li>
-                <li>
-                    <label>
-                        <p>Andi memiliki dadu bersisi <span class="math inline">\(9\)</span>
-                            dan Edo memiliki dadu bersisi <span class="math inline">\(11\)</span>.
-                            Mereka melempar dadu mereka dan Andi menang jika angka dadunya yang
-                            muncul lebih besar dibanding angka dadu Edo. Apabila peluang Andi menang
-                            dapat dinyatakan dalam bentuk <span
-                            class="math inline">\(\dfrac{a}{b}\)</span> dengan <span
-                            class="math inline">\(a,b\)</span> bilangan asli dan <span
-                            class="math inline">\(\gcd(a,b)=1\)</span>, tentukan nilai dari <span
-                            class="math inline">\(10a+b\)</span>.</p>
-                    </label><br>
-                    <input type="text" class="input-box">
-                </li>
-                <li>
-                    <label>
-                        <p>Diberikan segilima beraturan <span
-                            class="math inline">\(ABCDE\)</span>. Titik <span
-                            class="math inline">\(F\)</span> dan <span
-                            class="math inline">\(G\)</span> berturut-turut berada di <span
-                            class="math inline">\(BC\)</span> dan <span
-                            class="math inline">\(ED\)</span> sehingga <span
-                            class="math inline">\(AFG\)</span> segitiga sama sisi dan <span
-                            class="math inline">\(FG || CD\)</span>. Tentukan besar sudut <span
-                            class="math inline">\(\angle AFB\)</span> dalam derajat.</p>
-                    </label><br>
-                    <input type="text" class="input-box">
-                </li>
-                <li>
-                    <label>
-                        <p>Diberikan polinomial <span
-                            class="math inline">\(P(x)=ax^2+bx-c\)</span>, dimana <span
-                            class="math inline">\(a,b\)</span>, dan <span
-                            class="math inline">\(c\)</span> adalah bilangan prima yang tidak harus
-                            berbeda dan tidak lebih dari <span class="math inline">\(47\)</span>.
-                            Jika <span class="math inline">\(P(x)\)</span> memiliki akar-akar
-                            rasional yang berbeda, maka tentukan banyaknya polinomial <span
-                            class="math inline">\(P(x)\)</span> yang mungkin.</p>
-                    </label><br>
-                    <input type="text" class="input-box">
-                </li>
-                <li>
-                    <label>
-                        <p>Diberikan bilangan bulat <span class="math inline">\(n\)</span>
-                            sehingga <span class="math inline">\(n-64\)</span> adalah bilangan kubik
-                            sempurna dan <span class="math inline">\(n\)</span> habis dibagi <span
-                            class="math inline">\(37\)</span>. Tentukan nilai terkecil <span
-                            class="math inline">\(n\)</span> yang mungkin.</p>
-                    </label><br>
-                    <input type="text" class="input-box">
-                </li>
+                <li>Try Out terdiri dari 10 soal isian singkat</li>
+                <li>Try Out ini menggunakan timer 60 menit</li>
+                <li>Jawaban setiap soal dipastikan berupa bilangan bulat nonnegatif</li>
+                <li>Setiap soal yang dijawab benar diberikan 10 poin</li>
+                <li>Tidak ada pengurangan poin untuk soal yang dijawab salah ataupun dikosongkan</li>
+                <li>Kerjakan soal try out ini dengan sejujur-jujurnya untuk mengukur kemampuan Anda sebenarnya</li>
             </ul>
-            <div class="tombol-submit-answer">
-                <button id="submit" type="button" onclick="isSubmit()"><h3>Submit</h3></button>
-                <h3 id="answer-submit"></h3>
-            </div>
-            <div class="tombol-reset-nilai" id="reset-nilai">
-                <button id="lihat-nilai" type="button" onclick="lihatNilai()"><h3>Lihat Nilai</h3></button>
-                <button id="reset"><h3>Reset</h3></button>
-            </div>
-        </form>
-    </div>
-    <div class="footer">
-        <p>© 2022 All Rights Reserved | belajarOlim</p>
+        </div>
+        <div id="timer">Timer : 01:00:00</div>
+        <div class="try-out">
+            <form id="soal">
+                <ul>
+                    <li>
+                        <label>
+                            <p>Tentukan minimal banyaknya bilangan bulat yang perlu diambil dari
+                                himpunan <span class="math display">\[\{11,12,13,14,...,98,99\}\]</span>
+                                agar pasti terdapat 2 bilangan yang selisihnya terbentuk dari <span
+                                class="math inline">\(2\)</span> digit yang sama.</p>
+                        </label><br>
+                        <input type="text" class="input-box">
+                    </li>
+                    <li>
+                        <label>
+                            <p>Tentukan banyaknya pasangan bilangan bulat <span
+                                class="math inline">\((m,n)\)</span> yang memenuhi <span
+                                class="math inline">\(m^2+2m-35=2^n\)</span>.</p>
+                        </label><br>
+                        <input type="text" class="input-box">
+                    </li>
+                    <li>
+                        <label>
+                            <p>Diberikan bilangan real nonnegatif <span
+                                class="math inline">\(x,y,z\)</span> yang memenuhi <span
+                                class="math inline">\(xyz=\frac{2}{3}\)</span>. Tentukan nilai minimum
+                                dari <span
+                                class="math display">\[x^2+6xy+18y^2+12yz+4z^2.\]</span></p>
+                        </label><br>
+                        <input type="text" class="input-box">
+                    </li>
+                    <li>
+                        <label>
+                            <p>Tentukan jumlah semua bilangan bulat <span
+                                class="math inline">\(k\)</span> sehingga terdapat bilangan prima <span
+                                class="math inline">\(p\)</span> dan bilangan bulat <span
+                                class="math inline">\(n\)</span> yang memenuhi <span
+                                class="math display">\[2k^2+k-6=p^n.\]</span></p>
+                        </label><br>
+                        <input type="text" class="input-box">
+                    </li>
+                    <li>
+                        <label>
+                            <p>Diberikan segitiga <span class="math inline">\(ABC\)</span>
+                                dengan <span class="math inline">\(\angle ABC=75^\circ\)</span> dan
+                                <span class="math inline">\(\angle BAC\)</span> tumpul. Titik <span
+                                class="math inline">\(D\)</span> dan <span
+                                class="math inline">\(E\)</span> berada di <span
+                                class="math inline">\(AC\)</span> dan <span
+                                class="math inline">\(BC\)</span> berturut-turut sehingga <span
+                                class="math inline">\(\dfrac{AB}{BC}=\dfrac{DE}{EC}\)</span> dan <span
+                                class="math inline">\(\angle DEC=\angle EDC\)</span>. Tentukan besar
+                                <span class="math inline">\(\angle DEC\)</span> dalam derajat.</p>
+                        </label><br>
+                        <input type="text" class="input-box">
+                    </li>
+                    <li>
+                        <label>
+                            <p>Misalkan <span class="math inline">\(S(n)\)</span> menyatakan
+                                jumlah digit dari bilangan asli <span class="math inline">\(n\)</span>.
+                                Apabila <span class="math inline">\(S(n)=2018\)</span>, tentukan nilai
+                                terkecil dari <span class="math inline">\(S(n+1)\)</span>.</p>
+                        </label><br>
+                        <input type="text" class="input-box">
+                    </li>
+                    <li>
+                        <label>
+                            <p>Andi memiliki dadu bersisi <span class="math inline">\(9\)</span>
+                                dan Edo memiliki dadu bersisi <span class="math inline">\(11\)</span>.
+                                Mereka melempar dadu mereka dan Andi menang jika angka dadunya yang
+                                muncul lebih besar dibanding angka dadu Edo. Apabila peluang Andi menang
+                                dapat dinyatakan dalam bentuk <span
+                                class="math inline">\(\dfrac{a}{b}\)</span> dengan <span
+                                class="math inline">\(a,b\)</span> bilangan asli dan <span
+                                class="math inline">\(\gcd(a,b)=1\)</span>, tentukan nilai dari <span
+                                class="math inline">\(10a+b\)</span>.</p>
+                        </label><br>
+                        <input type="text" class="input-box">
+                    </li>
+                    <li>
+                        <label>
+                            <p>Diberikan segilima beraturan <span
+                                class="math inline">\(ABCDE\)</span>. Titik <span
+                                class="math inline">\(F\)</span> dan <span
+                                class="math inline">\(G\)</span> berturut-turut berada di <span
+                                class="math inline">\(BC\)</span> dan <span
+                                class="math inline">\(ED\)</span> sehingga <span
+                                class="math inline">\(AFG\)</span> segitiga sama sisi dan <span
+                                class="math inline">\(FG || CD\)</span>. Tentukan besar sudut <span
+                                class="math inline">\(\angle AFB\)</span> dalam derajat.</p>
+                        </label><br>
+                        <input type="text" class="input-box">
+                    </li>
+                    <li>
+                        <label>
+                            <p>Diberikan polinomial <span
+                                class="math inline">\(P(x)=ax^2+bx-c\)</span>, dimana <span
+                                class="math inline">\(a,b\)</span>, dan <span
+                                class="math inline">\(c\)</span> adalah bilangan prima yang tidak harus
+                                berbeda dan tidak lebih dari <span class="math inline">\(47\)</span>.
+                                Jika <span class="math inline">\(P(x)\)</span> memiliki akar-akar
+                                rasional yang berbeda, maka tentukan banyaknya polinomial <span
+                                class="math inline">\(P(x)\)</span> yang mungkin.</p>
+                        </label><br>
+                        <input type="text" class="input-box">
+                    </li>
+                    <li>
+                        <label>
+                            <p>Diberikan bilangan bulat <span class="math inline">\(n\)</span>
+                                sehingga <span class="math inline">\(n-64\)</span> adalah bilangan kubik
+                                sempurna dan <span class="math inline">\(n\)</span> habis dibagi <span
+                                class="math inline">\(37\)</span>. Tentukan nilai terkecil <span
+                                class="math inline">\(n\)</span> yang mungkin.</p>
+                        </label><br>
+                        <input type="text" class="input-box">
+                    </li>
+                </ul>
+                <div class="tombol-submit-answer">
+                    <button id="submit" type="button" onclick="isSubmit()"><h3>Submit</h3></button>
+                    <h3 id="answer-submit"></h3>
+                </div>
+                <div class="tombol-reset-nilai" id="reset-nilai">
+                    <button id="lihat-nilai" type="button" onclick="lihatNilai()"><h3>Lihat Nilai</h3></button>
+                    <button id="reset"><h3>Reset</h3></button>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <p>© 2022 All Rights Reserved | belajarOlim</p>
+        </div>
     </div>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script.js"></script>
