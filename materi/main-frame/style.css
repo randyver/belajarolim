@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow-x: hidden;
 }
 /*Style Navigation Bar*/
 /* Style navbar menu*/
@@ -85,6 +84,7 @@
         width: 100%;
         transform: translateX(100%);
         transition: all 1s;
+        display: none;
     }
     nav ul.slide{
         transform: translateX(0);
@@ -136,6 +136,9 @@
 }
 .intro-materi h1{
     color: rgb(235, 62, 62);
+}
+.hide{
+    display: none;
 }
 /* style footer */
 .footer{

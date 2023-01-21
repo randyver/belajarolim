@@ -6,16 +6,15 @@ menuToggle.addEventListener('click', function(){
 });
 
 var checkbox = document.querySelector("input[type='checkbox']");
+var navUl = document.querySelector(".nav ul");
 var container = document.querySelector(".container");
-var footer = document.querySelector(".footer");
 
 checkbox.addEventListener("change", function() {
   if(this.checked) {
-    container.classList.add("hide");
-    footer.classList.add("hide");
     navUl.style.display = "grid";
+    container.classList.add("hide");
   } else {
-    container.classList.remove("hide");
     navUl.style.display = "none";
+    container.classList.remove("hide");
   }
 });

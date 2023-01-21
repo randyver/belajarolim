@@ -133,6 +133,9 @@
     background-color: rgb(56, 55, 55);
     height: 60px;
 }
+.hide{
+    display: none;
+}
 /* style footer */
 .footer{
     position: fixed;
