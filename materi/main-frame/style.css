@@ -90,7 +90,7 @@
         transform: translateX(0);
     }
     .footer{
-        margin-top: 900px;
+        margin-top: 60px;
     }
     .sub-materi, .intro-materi{
         margin-left: 80px;
@@ -103,6 +103,9 @@
 @media screen and (min-width: 700px){
     .sub-materi button{
         width: 600px;
+    }
+    .footer{
+        margin-top: 80px;
     }
 }
 .sub-materi{
@@ -142,7 +145,7 @@
 }
 /* style footer */
 .footer{
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;

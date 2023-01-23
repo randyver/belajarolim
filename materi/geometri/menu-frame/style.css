@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow-x: hidden;
 }
 /*Style Navigation Bar*/
 /* Style navbar menu*/
@@ -84,8 +83,9 @@
         background-color: rgb(235, 62, 62);
         z-index: 2;
         width: 100%;
-        transform: translateX(100%);
+        transform: translateX(0);
         transition: all 1s;
+        display: none;
     }
     nav ul.slide{
         transform: translateX(0);
@@ -105,6 +105,9 @@
     .menu button{
         width: 600px;
     }
+}
+.hide{
+    display: none;
 }
 .menu{
     display: flex;

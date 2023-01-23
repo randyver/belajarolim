@@ -188,6 +188,10 @@
 .hide{
     display: none;
 }
+.try-out ul li label p{
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
 
 /* style footer */
 .footer{
