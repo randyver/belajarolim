@@ -8,6 +8,7 @@ menuToggle.addEventListener('click', function(){
 var checkbox = document.querySelector("input[type='checkbox']");
 var container = document.querySelector(".container");
 var footer = document.querySelector(".footer");
+var navUl = document.querySelector(".nav ul");
 
 checkbox.addEventListener("change", function() {
   if(this.checked) {
