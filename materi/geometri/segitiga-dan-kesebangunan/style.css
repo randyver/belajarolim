@@ -98,6 +98,24 @@
     .footer{
         margin-top: 100px;
     }
+    .materi-olim{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .latihan ul{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+@media screen and (min-width: 600px){
+    .materi-olim{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .latihan ul{
+        margin-left: 80px;
+        margin-right: 80px;
+    }
 }
 
 /*style materi*/
@@ -107,7 +125,6 @@
     margin-top: 30px;
 }
 .materi-olim{
-    margin: 80px 80px;
     text-align: justify;
 }
 .materi-olim p{
@@ -143,15 +160,20 @@
     height: 30px;
     width: 80px;
 }
-#reset-kj{
-    margin-bottom: 60px;
+.tombol-reset-kj{
     display: none;
-    margin-left: 500px;
+    justify-content: space-around;
+    margin-bottom: 50px;
 }
-#lihat-kj, #reset{
-    height: 30px;
-    width: 180px;
-    margin-right: 20px;
+@media screen and (max-width: 576px){
+    .tombol-reset-kj{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .tombol-reset-kj button{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 #submit ,.tombol-reset-kj button{
     color: black;

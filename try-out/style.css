@@ -140,9 +140,12 @@
     color: #ff914d;
     margin-top: 30px;
 }
-.try-out ul{
-    margin: 80px 80px;
-    list-style: decimal;
+@media screen and (max-width: 576px){
+    .try-out ul{
+        margin-left: 50px;
+        margin-right: 40px;
+        list-style: decimal;
+    }
 }
 .input-box{
     width: 200px;
@@ -152,6 +155,7 @@
 
 /* tombol submit */
 .tombol-submit-answer{
+    margin-top: 40px;
     margin-bottom: 60px;
     display: flex;
     justify-content: space-around;
@@ -166,8 +170,12 @@
 .tombol-reset-nilai{
     display: none;
     justify-content: space-between;
-    margin-left: 600px;
-    margin-right: 600px;
+}
+@media screen and (max-width: 576px){
+    .tombol-reset-nilai{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
 }
 
 /* style semua tombol */
